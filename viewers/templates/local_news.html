@@ -115,6 +115,36 @@
                     <div class="dis_name" style="margin: 0px; padding: 0px;">
                         THAMARASSERY
                     </div>
+                {% if m_tsy_news == "" %}
+                    {% for tsy in m_tsy_news_latest %}
+                    <div>
+                        <div class="col-sm-12" style="margin: 0px; padding: 0px;">
+                            <div class="news_head" style="margin: 10px 0px 0px 0px; padding: 0px;">
+                                <a href="/news_view/{{ tsy.pk }}/">
+                                {{ tsy.news_title }}
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12" style="margin: 0px; padding: 0px;">
+                            <div class="col-sm-5" style="margin: 0px; padding: 0px;">
+                                <div class="news_image top_nws_image" style="margin: 15px 0px 0px 0px; padding: 0px;">
+                                    <a href="/news_view/{{ tsy.pk }}/">
+                                        <img src="{{ tsy.news_image.url }}" alt="" width="100%">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 top_nws_content_top_main_col" style="margin: 0px; padding: 0px;">
+                                <div class="news_content top_nws_content" style="margin: 15px 0px 0px 15px; padding: 0px;">
+                                    <a href="/news_view/{{ tsy.pk }}/" >
+                                        {{ tsy.news_content }}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% elif m_tsy_news != "" %}
                     {% for tsy in m_tsy_news %}
                     <div>
                         <div class="col-sm-12" style="margin: 0px; padding: 0px;">
@@ -143,6 +173,8 @@
                         </div>
                     </div>
                     {% endfor %}
+                {% endif %}
+
                         <div class="col-sm-12" style="margin: 5px 0px 5px 0px; padding: 0px;">
                             <div class="table_col" style="margin: 0px; padding: 0px;">
                                 <table id="local_news_table" style="margin: 0px; padding: 0px;">
