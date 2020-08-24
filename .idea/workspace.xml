@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49ea9d50-18ce-4ba7-aa42-1479080387f2" name="Default" comment="19-8-2020" />
+    <list default="true" id="49ea9d50-18ce-4ba7-aa42-1479080387f2" name="Default" comment="19-8-2020">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/viewers/static/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/viewers/static/image/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/viewers/static/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/viewers/static/js/date.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/viewers/static/js/days.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/viewers/static/js/jquery.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/images/icon.png" afterPath="$PROJECT_DIR$/editors/static/images/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/css/about.css" afterPath="$PROJECT_DIR$/editors/static/css/about.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/css/basic_css.css" afterPath="$PROJECT_DIR$/editors/static/css/basic_css.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/css/braking news.css" afterPath="$PROJECT_DIR$/editors/static/css/braking news.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/css/demo.css" afterPath="$PROJECT_DIR$/editors/static/css/demo.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/css/index.css" afterPath="$PROJECT_DIR$/editors/static/css/index.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/css/mobile_view.css" afterPath="$PROJECT_DIR$/editors/static/css/mobile_view.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/css/nav_and_footer.css" afterPath="$PROJECT_DIR$/editors/static/css/nav_and_footer.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/css/navbar_a.css" afterPath="$PROJECT_DIR$/editors/static/css/navbar_a.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/css/news_viw.css" afterPath="$PROJECT_DIR$/editors/static/css/news_viw.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/css/theme1.css" afterPath="$PROJECT_DIR$/editors/static/css/theme1.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/1.jpg" afterPath="$PROJECT_DIR$/editors/static/images/1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/2.jpg" afterPath="$PROJECT_DIR$/editors/static/images/2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/3.jpg" afterPath="$PROJECT_DIR$/editors/static/images/3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/4.jpg" afterPath="$PROJECT_DIR$/editors/static/images/4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/5.jpg" afterPath="$PROJECT_DIR$/editors/static/images/5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/6.jpg" afterPath="$PROJECT_DIR$/editors/static/images/6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/aboutus.png" afterPath="$PROJECT_DIR$/editors/static/images/aboutus.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/avatar.png" afterPath="$PROJECT_DIR$/editors/static/images/avatar.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/facebook-icon.png" afterPath="$PROJECT_DIR$/editors/static/images/facebook-icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/gmail-logo.png" afterPath="$PROJECT_DIR$/editors/static/images/gmail-logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/insta-icon.png" afterPath="$PROJECT_DIR$/editors/static/images/insta-icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/local.png" afterPath="$PROJECT_DIR$/editors/static/images/local.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/niyamasbabha_samelanam.jpg" afterPath="$PROJECT_DIR$/editors/static/images/niyamasbabha_samelanam.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/raaz.jpg" afterPath="$PROJECT_DIR$/editors/static/images/raaz.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/telegram-icon.png" afterPath="$PROJECT_DIR$/editors/static/images/telegram-icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/tsy.png" afterPath="$PROJECT_DIR$/editors/static/images/tsy.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/tsy_2.png" afterPath="$PROJECT_DIR$/editors/static/images/tsy_2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/twiter.png" afterPath="$PROJECT_DIR$/editors/static/images/twiter.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/image/whatsapp-icon.png" afterPath="$PROJECT_DIR$/editors/static/images/whatsapp-icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/js/all.js" afterPath="$PROJECT_DIR$/editors/static/js/all.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/js/caleandar.js" afterPath="$PROJECT_DIR$/editors/static/js/caleandar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/js/caleandar.min.js" afterPath="$PROJECT_DIR$/editors/static/js/caleandar.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/js/demo.js" afterPath="$PROJECT_DIR$/editors/static/js/demo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/js/jquery-1.11.1.min.js" afterPath="$PROJECT_DIR$/editors/static/js/jquery-1.11.1.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/viewers/static/js/top_time.js" afterPath="$PROJECT_DIR$/editors/static/js/top_time.js" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +71,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="320">
+              <caret line="90" column="21" lean-forward="false" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -127,62 +171,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tsynews">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tsynews">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="viewers">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tsynews">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tsynews">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tsynews">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="editors">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -230,6 +218,88 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tsynews">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tsynews">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="viewers">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tsynews">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="editors">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tsynews">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="editors">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="static">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="js">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tsynews">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="editors">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="static">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,17 +311,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="H:\tsynews\viewers\static\image" />
-      <recent name="H:\tsynews\media" />
-      <recent name="H:\tsynews\viewers\static\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="H:\tsynews\media" />
       <recent name="H:\tsynews\editors\static\js" />
       <recent name="H:\tsynews\editors\static" />
       <recent name="H:\tsynews\editors\templates" />
       <recent name="H:\tsynews\viewers\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\tsynews\editors\static\js" />
+      <recent name="H:\tsynews\editors\static\images" />
+      <recent name="H:\tsynews\editors\static\css" />
+      <recent name="H:\tsynews\viewers\static\image" />
+      <recent name="H:\tsynews\media" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -616,7 +688,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27389985" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2784522" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -624,17 +696,29 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20458265" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3305648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19967267" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20458265" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3305648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27389985" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -716,7 +800,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/viewers/static/css/basic_css.css">
+    <entry file="file://$PROJECT_DIR$/editors/static/css/basic_css.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
@@ -738,19 +822,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/viewers/static/css/box.css" />
-    <entry file="file://$PROJECT_DIR$/viewers/static/css/demo.css">
+    <entry file="file://$PROJECT_DIR$/editors/static/css/demo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/static/image/tsy_2.png">
+    <entry file="file://$PROJECT_DIR$/editors/static/images/tsy_2.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/static/image/tsy.png">
+    <entry file="file://$PROJECT_DIR$/editors/static/images/tsy.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -762,28 +846,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/static/css/nav_and_footer.css">
+    <entry file="file://$PROJECT_DIR$/editors/static/css/nav_and_footer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="95" column="18" lean-forward="true" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/static/css/about.css">
+    <entry file="file://$PROJECT_DIR$/editors/static/css/about.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="883">
           <caret line="177" column="24" lean-forward="false" selection-start-line="177" selection-start-column="24" selection-end-line="177" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/static/css/mobile_view.css">
+    <entry file="file://$PROJECT_DIR$/editors/static/css/mobile_view.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/static/js/days.js">
+    <entry file="file://$PROJECT_DIR$/editors/static/js/days.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -797,21 +881,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/static/js/date.js">
+    <entry file="file://$PROJECT_DIR$/editors/static/js/date.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/static/js/demo.js">
+    <entry file="file://$PROJECT_DIR$/editors/static/js/demo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/static/js/top_time.js">
+    <entry file="file://$PROJECT_DIR$/editors/static/js/top_time.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -837,21 +921,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/static/css/braking news.css">
+    <entry file="file://$PROJECT_DIR$/editors/static/css/braking news.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/static/css/index.css">
+    <entry file="file://$PROJECT_DIR$/editors/static/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/static/image/facebook-icon.png">
+    <entry file="file://$PROJECT_DIR$/editors/static/images/facebook-icon.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1040,8 +1124,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="320">
+          <caret line="90" column="21" lean-forward="false" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
           <folding />
         </state>
       </provider>
