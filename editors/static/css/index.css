@@ -106,6 +106,9 @@
     .breaking-news-head{
         font-size: 10px;
     }
+    .mobile_view_non_hr{
+        display: none;
+    }
     .onoffswitch3-active .onoffswitch3-switch{
         width: 95px;
     }
