@@ -109,6 +109,9 @@
     .mobile_view_non_hr{
         display: none;
     }
+    .calender{
+        display: none;
+    }
     .onoffswitch3-active .onoffswitch3-switch{
         width: 95px;
     }
