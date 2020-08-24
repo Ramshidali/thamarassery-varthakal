@@ -410,7 +410,7 @@ def n_reject(request,id):
     else:
         n_d = news_field.objects.get(pk=id)
         n_d.delete()
-        return redirect('/writer/pending_members/')
+        return redirect('/writer/my_record/')
 
 
 def logout_view(request):

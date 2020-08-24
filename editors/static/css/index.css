@@ -100,6 +100,15 @@
 /* MOBILE VIEW*/
 
 @media (max-width:900px) {
+    body{
+        padding: 0px;
+    }
+    .breaking-news-head{
+        font-size: 10px;
+    }
+    .onoffswitch3-active .onoffswitch3-switch{
+        width: 95px;
+    }
     .namerow{
         display: none;
     }

@@ -25,7 +25,7 @@ SECRET_KEY = 'mef74ybbyg#j562!^_slw$lb2dx%604ue5othkfukg=ih_j-7j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['thamarasseryvarthakal.in']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -124,7 +124,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/editors/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
