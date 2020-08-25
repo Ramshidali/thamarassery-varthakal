@@ -109,91 +109,28 @@
                 ABOUT
             </div>
             <div class="col-sm-12 about_content_div" >
+                {% for c in content %}
                 <div class="about_content">
-                    താമരശ്ശേരി മേഖലയിലെ വാർത്തകൾ അറിയാനും അറിയിക്കാനുമാണ് താമരശ്ശേരി വാർത്തകൾ നേരായ 
-          വാർത്തകൾ ഏറ്റവും ആദ്യം നിങ്ങളുടെ മുമ്പിലേക്ക് താമരശ്ശേരി വാർത്തകൾ എത്തിക്കുന്നു . പരാതികളോ 
-          ഉപദേശ നിർദ്ദേശങ്ങളോ നൽകാനുണ്ടെങ്കിൽ അഡ്മിൻമാരുമായി ബന്ധപ്പെടുക.
+                    {{ c.contant }}
                 </div>
+                {% endfor %}
             </div>
             <div class="col-sm-12 editors_images">
-                <div class="col-sm-4 image_cards">
-                    <div class="tab1cards">
-                        <div class="card" >
-                            <img class="card-img-top" src='{% static "images/1.jpg" %}' alt="Card image cap" width="100%">
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">NAVAS MANU</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-sm-4 image_cards">
-                    <div class="tab1cards">
-                        <div class="card" >
-                            <img class="card-img-top" src='{% static "images/2.jpg" %}' alt="Card image cap" width="100%">
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">RAMSHAD AJUMAL</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
+                {% for details in about_details %}
                 <div class="col-sm-4 image_cards">
                     <div class="tab1cards">
                         <div class="card" >
-                            <img class="card-img-top" src='{% static "images/3.jpg" %}' alt="Card image cap" width="100%">
+                            <img class="card-img-top" src={{ details.user_image.url }} alt="Card image cap" width="100%">
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">SIRAJ MP</li>
+                                    <li class="list-group-item">{{ details.user_name }}</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="col-sm-4 image_cards">
-                    <div class="tab1cards">
-                        <div class="card" >
-                            <img class="card-img-top" src='{% static "images/4.jpg" %}' alt="Card image cap" width="100%">
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">ANAS MOKAY</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-sm-4 image_cards">
-                    <div class="tab1cards">
-                        <div class="card" >
-                            <img class="card-img-top" src='{% static "images/5.jpg" %}' alt="Card image cap" width="100%">
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">SHAFI ADIVARAM</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 image_cards">
-                    <div class="tab1cards">
-                        <div class="card" >
-                            <img class="card-img-top" src='{% static "images/6.jpg" %}' alt="Card image cap" width="100%">
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">FASLA KP</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
 
             </div>
 

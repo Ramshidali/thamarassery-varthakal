@@ -79,7 +79,10 @@
             <!-- date row -->
             <div class="row date_row">
                 <div class="col-sm-4">
-                    <div class="scnd_name_img_col">
+                    <div class="scnd_name_img_col second_image_1" style="text-align: center">
+                        <img src='{% static "images/tsy.png" %}'>
+                    </div>
+                    <div class="scnd_name_img_col second_image_2">
                         <img src='{% static "images/tsy_2.png" %}' width="100%">
                     </div>
                 </div>
@@ -269,11 +272,12 @@
                 </div>
             </div><!--local news table end-->
 
-            <div class="col-sm-2 add_area" ><!--local news table-->
-                <div class="col-md-12 heading_news_types">
-{#                    <span>add area</span>#}
-{#                    <hr class="main_news_hr">#}
-                </div>
+            <div class="col-sm-2 add_area" style="margin: 0;padding: 0"  ><!--local news table-->
+                    {% for ad in adv_side %}
+                        <div class="col-sm-12">
+                            <img src={{ ad.adv_images.url }} alt="" width="100%">
+                        </div>
+                        {% endfor %}
             </div>
         </div><!-- news area end -->
         <hr>

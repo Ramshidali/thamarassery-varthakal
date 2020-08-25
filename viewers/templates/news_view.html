@@ -249,11 +249,13 @@
                 </div>
 
                 <div class="col-sm-12">
-                     {% for ad in adv_side %}
-                        <div class="col-sm-12">
-                            <img src={{ ad.adv_images.url }} alt="" width="100%">
-                        </div>
+                    <div class="col-sm-11" style="margin: 0px; padding: 0px;"><!--adv_area more newses-->
+                        {% for ad in adv_side %}
+                            <div class="col-sm-12" style="margin: 0;padding: 0">
+                                <img src={{ ad.adv_images.url }} alt="" width="100%">
+                            </div>
                         {% endfor %}
+                    </div>
                 </div>
             </div>
 

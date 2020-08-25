@@ -204,14 +204,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-4" style="margin:0px; margin-top: 20px; padding: 0px 50px 0px 30px;">
                 <div class="col-sm-12">
-                    {% for ad in adv_side %}
-                    <div class="row" style="padding-bottom: 15px;">
-                        <img src='{{ ad.adv_images.urls }}' alt="" width="100%">
+                    <div class="col-sm-11" style="margin: 0px; padding: 0px;"><!--adv_area more newses-->
+                        {% for ad in adv_side %}
+                            <div class="col-sm-12" style="margin: 0;padding: 0">
+                                <img src={{ ad.adv_images.url }} alt="" width="100%">
+                            </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
                 </div>
             </div>
         </div>

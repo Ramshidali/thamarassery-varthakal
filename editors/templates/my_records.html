@@ -19,6 +19,7 @@
         <a href="/writer/all_members/"><i class="fas fa-registered"></i> All Members</a>
         <a href="/writer/pending_members/"><i class="fas fa-table"></i> Pending Members</a>
         <a href="/writer/whatsapp_link/"><i class="fas fa-link"></i> Whatsapp Link</a>
+        <a href="/writer/edit_about/"><i class="fas fa-edit"></i> Edit About</a>
         {% endif %}
         <a href="/writer/adv_page/"><i class="fas fa-user"></i>Post Advertisement</a>
         <a href="/writer/ad_view/"><i class="fas fa-user"></i>View Advertisement</a>
@@ -28,7 +29,7 @@
     <div class="container_tbl" >
 
             <h1 class="logo_name">
-                Thamarassery News
+                താമരശ്ശേരി വാര്‍ത്തകള്‍
             </h1>
             <br class="mobile_view">
 
@@ -49,9 +50,9 @@
 {#                            <td colspan="4">{{ r.news_image.url }}</td>#}
                             <td style="text-align: center">
                             <br>
-                                <input type="botton"  onclick="copyToClipboard('*{{ r.news_title }}*\n_Published {{ date |date:"d-m-Y" }}\xa0{{ day }}_\n\n{{ r.news_content | slice:"50" }}....read more http://thamarasseryvarthakal.in/news_view/{{ r.pk }}/\n ➖➖➖➖➖➖➖➖➖➖\n *കൂടുതൽ വാർത്തകൾക്ക് താമരശ്ശേരി വാർത്തകൾ വാട്സ്അപ്പ് ഗ്രൂപ്പിൽ ജോയിന്റ് ചെയ്യുക*\n{{ w_link }}\n*താമരശ്ശേരി വാർത്തകൾ ഇനി ടെലിഗ്രാമിലും ,ഫെയ്‌സ് ബുക്കിലും ....*\nhttps://t.me/joinchat/L-pmZ1AFopEsHNKA95C-Xw\n*ഫെയ്സ്ബുക്ക് ഗ്രൂപ്പ്*\nhttps://www.facebook.com/groups/2081227165274481/\n➖➖➖➖➖➖➖➖➖➖\n*_വാർത്തകൾക്കും , പരസ്യങ്ങൾക്കും_* *24 മണിക്കൂറും ബന്ധപ്പെടുക*\n http://wa.me/919961568091\nhttp://wa.me/966552964337\n➖➖➖➖➖➖➖➖➖➖')" class="fa fa-copy" value="copy"><br>
+                                <input type="botton" class="btn btn-primary" style="width: 80px"  onclick="copyToClipboard('*{{ r.news_title }}*\n_Published {{ date |date:"d-m-Y" }}\xa0{{ day }}_\n\n{{ r.news_content | slice:"50" }}....read more http://thamarasseryvarthakal.in/news_view/{{ r.pk }}/\n ➖➖➖➖➖➖➖➖➖➖\n *കൂടുതൽ വാർത്തകൾക്ക് താമരശ്ശേരി വാർത്തകൾ വാട്സ്അപ്പ് ഗ്രൂപ്പിൽ ജോയിന്റ് ചെയ്യുക*\n{{ w_link }}\n*താമരശ്ശേരി വാർത്തകൾ ഇനി ടെലിഗ്രാമിലും ,ഫെയ്‌സ് ബുക്കിലും ....*\nhttps://t.me/joinchat/L-pmZ1AFopEsHNKA95C-Xw\n*ഫെയ്സ്ബുക്ക് ഗ്രൂപ്പ്*\nhttps://www.facebook.com/groups/2081227165274481/\n➖➖➖➖➖➖➖➖➖➖\n*_വാർത്തകൾക്കും , പരസ്യങ്ങൾക്കും_* *24 മണിക്കൂറും ബന്ധപ്പെടുക*\n http://wa.me/919961568091\nhttp://wa.me/966552964337\n➖➖➖➖➖➖➖➖➖➖')" class="fa fa-copy" value="copy"><br>
 {#                                <br><a href="/writer/n_reject/{{ r.pk }}/" ><input type="button"  class="fa fa-edit" value="update"></a><br>#}
-                                <br><a href="/writer/n_reject/{{ r.pk }}/" ><input type="button"  class="fa fa-trash" value="Remove"></a></td>
+                                <br><a href="/writer/n_reject/{{ r.pk }}/" ><input type="button"  class="btn btn-primary" value="Remove"></a></td>
                     </tr>
                     {% endfor %}
 

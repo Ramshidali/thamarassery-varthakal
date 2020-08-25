@@ -68,5 +68,22 @@ class news_field(models.Model):
 class whatsapp_link(models.Model):
     whatsapp_link_urls = models.URLField(db_index=True, unique=True, blank=True)
     editor_id = models.ForeignKey(User,on_delete=models.CASCADE)
+
     def __str__(self):
         return self.whatsapp_link_urls
+
+
+class aboutus(models.Model):
+    user_image = models.ImageField(null=False)
+    user_name = models.CharField(max_length=50,null=False,blank=False)
+    editor_id = models.ForeignKey(User,on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.user_name
+
+class aboutus_content(models.Model):
+    contant = models.CharField(max_length=10000,null=False,blank=False)
+    editor_id = models.ForeignKey(User,on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.editor_id

@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.core.files.storage import FileSystemStorage
-from . models import registration,news_field,advetiment_field,adv_position,news_place,news_nation,news_district,whatsapp_link
+from . models import registration,news_field,advetiment_field,adv_position,news_place,\
+    news_nation,news_district,whatsapp_link,aboutus_content,aboutus
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,logout
 from django.contrib import messages
@@ -243,7 +244,7 @@ def ad_post(request):
 def view_adv(request):
     user = User.objects.get(pk=request.session['id'])
     user_type = registration.objects.get(id=user)
-    adv = advetiment_field.objects.all()
+    adv = advetiment_field.objects.order_by('-id')
 
     if user is None:
         messages.success(request, 'Login Timeout, Please Login...')
@@ -369,6 +370,67 @@ def whatsapp(request):
         }
         return render(request,'whatsapp.html',u_type)
 
+
+def editabout(request):
+    user = User.objects.get(pk=request.session['id'])
+    user_type = registration.objects.get(id=user)
+    contents = aboutus_content.objects.order_by('-id')[:1]
+    user_details = aboutus.objects.all()
+
+    context = {
+        'content' : contents,
+        'about_details' : user_details,
+        'usertype': user_type,
+    }
+    return render(request,'Edit_about.html',context)
+
+
+
+
+def add_user_about(request):
+    user = User.objects.get(pk=request.session['id'])
+    if user is None:
+        messages.success(request, 'Login Timeout, Please Login...')
+        return render(request, 'login.html')
+    else:
+        u_name = request.POST['users_name']
+
+        img = request.FILES['image']
+        fs = FileSystemStorage()
+        fs.save(img.name, img)
+
+        add = aboutus(editor_id=user,user_image=img,user_name=u_name)
+        add.save()
+
+        return redirect('/writer/edit_about/')
+
+def delete_about_editors(request,id):
+    d_editors = aboutus.objects.get(pk=id)
+    d_editors.delete()
+    return redirect('/writer/edit_about/')
+
+
+def add_about_content(request):
+    user = User.objects.get(pk=request.session['id'])
+    if user is None:
+        messages.success(request, 'Login Timeout, Please Login...')
+        return render(request, 'login.html')
+    else:
+        content = request.POST['content']
+
+        add_content = aboutus_content(contant=content,editor_id=user)
+        add_content.save()
+    return redirect('/writer/edit_about/')
+
+
+
+def delete_about_content(request,id):
+    d_contents = aboutus_content.objects.get(pk=id)
+    d_contents.delete()
+    return redirect('/writer/edit_about/')
+
+
+
 def upload_link(request):
     user = User.objects.get(pk=request.session['id'])
     if user is None:
@@ -392,6 +454,8 @@ def u_approve(request,id):
         registration.objects.filter(pk=id).update(user_type="editor")
         return redirect('/writer/all_members/')
 
+
+
 def u_reject(request,id):
     user = User.objects.get(pk=request.session['id'])
     if user is None:
@@ -401,6 +465,8 @@ def u_reject(request,id):
         u_d = User.objects.get(pk=id)
         u_d.delete()
         return redirect('/writer/all_members/')
+
+
 
 def n_reject(request,id):
     user = User.objects.get(pk=request.session['id'])

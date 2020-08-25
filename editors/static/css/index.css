@@ -97,11 +97,20 @@
     /* font-size: 30px; */
     /* text-align: center; */
   }
+  .second_image_1{
+      display: none;
+  }
 /* MOBILE VIEW*/
 
 @media (max-width:900px) {
     body{
         padding: 0px;
+    }
+    .scnd_name_img_col{
+        text-align: center;
+    }
+    .second_image_2 {
+        display: none;
     }
     .breaking-news-head{
         font-size: 10px;
@@ -140,6 +149,7 @@
         margin: 10px 0px 10px 0px;
     }
     .scnd_name_img_col{
-        margin: 5px 0 5px 0;
+        padding: 20px 0px 20px 0px;
+        margin: 0px;
     }
 }

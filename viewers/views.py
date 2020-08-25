@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from  editors.models import registration,news_field,advetiment_field,news_place,news_nation
+from  editors.models import registration,news_field,advetiment_field,news_place,news_nation,aboutus,aboutus_content
 from django.contrib.auth.models import User
 from datetime import date,datetime
 
@@ -253,4 +253,13 @@ def news_view(request,id):
 
 
 def about (request):
-    return render(request,'about.html')
+    contents = aboutus_content.objects.order_by('-id')
+    user_details = aboutus.objects.all()
+
+    context = {
+        'content': contents,
+        'about_details': user_details,
+    }
+    return render(request,'about.html',context)
+
+
