@@ -382,7 +382,7 @@ def editabout(request):
         'about_details' : user_details,
         'usertype': user_type,
     }
-    return render(request,'Edit_about.html',context)
+    return render(request,'Edit_About.html',context)
 
 
 
