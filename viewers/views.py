@@ -6,8 +6,8 @@ from datetime import date,datetime
 # Create your views here.
 def index(request):
 
-    news = news_field.objects.filter(published_date=date.today()).order_by('-id')
-    gulf = news.filter(news_nation_id=2)
+    news = news_field.objects.order_by('-id')[:50]
+    gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:10]
     main_a = news_field.objects.filter(main_news=2).latest('id')
     main_b = news_field.objects.filter(main_news=2).exclude(pk=main_a.pk).order_by('-id')[:2]
     local_tsy = news_field.objects.filter(news_place_id=1).latest('id')
@@ -49,7 +49,7 @@ def index(request):
 
 
 def latest(request):
-    n_latest = news_field.objects.filter(published_date=date.today()).order_by('-id')
+    n_latest = news_field.objects.order_by('-id')[:100]
     inter = news_field.objects.filter(news_nation_id=3).order_by('-id')[:1]
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
@@ -78,7 +78,7 @@ def latest(request):
 
 
 def gulf(request):
-    gulf = news_field.objects.filter(published_date=date.today(),news_nation_id=2).order_by('-id')
+    gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:100]
     inter = news_field.objects.filter(news_nation_id=3).order_by('-id')[:1]
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
@@ -136,7 +136,7 @@ def internation(request):
 
 
 def kerala(request):
-    kerala = news_field.objects.filter(published_date=date.today(),news_nation_id=1).order_by('-id')
+    kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:100]
     inter = news_field.objects.filter(news_nation_id=3).order_by('-id')[:1]
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
@@ -167,20 +167,20 @@ def kerala(request):
 
 def local(request):
     news_page_type = 'Local'
-    tsy_news = news_field.objects.filter(news_place_id=1,published_date=date.today()).order_by('-id')[:1]
-    tsy_newss = news_field.objects.filter(news_place_id=1,published_date=date.today()).exclude(pk=id(tsy_news)).order_by('-id')
-    kdly_news = news_field.objects.filter(news_place_id=2, published_date=date.today()).order_by('-id')[:1]
-    kdly_newss = news_field.objects.filter(news_place_id=2, published_date=date.today()).exclude(pk=id(kdly_news)).order_by('-id')
-    blsry_news = news_field.objects.filter(news_place_id=3, published_date=date.today()).order_by('-id')[:1]
-    blsry_newss = news_field.objects.filter(news_place_id=3, published_date=date.today()).exclude(pk=id(blsry_news)).order_by('-id')
-    mukkam_news = news_field.objects.filter(news_place_id=4, published_date=date.today()).order_by('-id')[:1]
-    mukkam_newss = news_field.objects.filter(news_place_id=4, published_date=date.today()).exclude(pk=id(mukkam_news)).order_by('-id')
-    thiruvampady_news = news_field.objects.filter(news_place_id=5, published_date=date.today()).order_by('-id')[:1]
-    thiruvampady_newss = news_field.objects.filter(news_place_id=5, published_date=date.today()).exclude(pk=id(thiruvampady_news)).order_by('-id')
-    puthuppady_news = news_field.objects.filter(news_place_id=6, published_date=date.today()).order_by('-id')[:1]
-    puthuppady_newss = news_field.objects.filter(news_place_id=6, published_date=date.today()).exclude(pk=id(puthuppady_news)).order_by('-id')
-    kattippara_news = news_field.objects.filter(news_place_id=7, published_date=date.today()).order_by('-id')[:1]
-    kattippara_newss = news_field.objects.filter(news_place_id=7, published_date=date.today()).exclude(pk=id(kattippara_news)).order_by('-id')
+    tsy_news = news_field.objects.filter(news_place_id=1).order_by('-id')[:1]
+    tsy_newss = news_field.objects.filter(news_place_id=1).exclude(pk=id(tsy_news)).order_by('-id')[:50]
+    kdly_news = news_field.objects.filter(news_place_id=2).order_by('-id')[:1]
+    kdly_newss = news_field.objects.filter(news_place_id=2).exclude(pk=id(kdly_news)).order_by('-id')[:50]
+    blsry_news = news_field.objects.filter(news_place_id=3).order_by('-id')[:1]
+    blsry_newss = news_field.objects.filter(news_place_id=3).exclude(pk=id(blsry_news)).order_by('-id')[:50]
+    mukkam_news = news_field.objects.filter(news_place_id=4).order_by('-id')[:1]
+    mukkam_newss = news_field.objects.filter(news_place_id=4).exclude(pk=id(mukkam_news)).order_by('-id')[:50]
+    thiruvampady_news = news_field.objects.filter(news_place_id=5).order_by('-id')[:1]
+    thiruvampady_newss = news_field.objects.filter(news_place_id=5).exclude(pk=id(thiruvampady_news)).order_by('-id')[:50]
+    puthuppady_news = news_field.objects.filter(news_place_id=6).order_by('-id')[:1]
+    puthuppady_newss = news_field.objects.filter(news_place_id=6).exclude(pk=id(puthuppady_news)).order_by('-id')[:50]
+    kattippara_news = news_field.objects.filter(news_place_id=7).order_by('-id')[:1]
+    kattippara_newss = news_field.objects.filter(news_place_id=7).exclude(pk=id(kattippara_news)).order_by('-id')[:50]
     inter = news_field.objects.filter(news_nation_id=3).order_by('-id')[:1]
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
@@ -225,7 +225,7 @@ def local(request):
 
 def news_view(request,id):
     news = news_field.objects.get(pk=id)
-    n_latest = news_field.objects.filter(published_date=date.today()).exclude(pk=id).order_by('-id')
+    n_latest = news_field.objects.exclude(pk=id).order_by('-id')[:50]
     inter = news_field.objects.filter(news_nation_id=3).order_by('-id')[:1]
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]

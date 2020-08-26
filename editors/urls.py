@@ -14,6 +14,7 @@ urlpatterns = [
     path('adv_page/',views.adv_page, name='adv_page'),
     path('ad_post/',views.ad_post,name='ad_post'),
     path('ad_view/',views.view_adv,name='view_adv'),
+    path('ad_remove/<int:id>/',views.ad_remove,name='ad_remove'),
     path('my_record/',views.my_record,name='my_record'),
     path('all_members/',views.all_members,name='all_members'),
     path('allmembers_reject/<int:id>/',views.all_reject,name='all_reject'),

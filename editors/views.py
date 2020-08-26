@@ -164,7 +164,7 @@ def post_news(request):
         messages.success(request, 'Login Timeout, Please Login...')
         return render(request, 'login.html')
     else:
-        x = datetime.date.today()
+        x = datetime.datetime.now()
         print(x)
         headding = request.POST['n_head']
         print(headding)
@@ -230,7 +230,7 @@ def ad_post(request):
         messages.success(request, 'Login Timeout, Please Login...')
         return render(request, 'login.html')
     else:
-        d = datetime.date.today()
+        d = datetime.datetime.now()
         head = request.POST['headding']
         position = request.POST['ad_position']
         img = request.FILES['image']
@@ -240,6 +240,19 @@ def ad_post(request):
         adv = advetiment_field(user_id_id=user.pk, date_of_publish=d, adv_content=head,ad_position_id=position,adv_images=img)
         adv.save()
         return redirect('/writer/adv_page/')
+
+def ad_remove(request,id):
+    user = User.objects.get(pk=request.session['id'])
+
+    if user is None:
+        messages.success(request, 'Login Timeout, Please Login...')
+        return render(request, 'login.html')
+    else:
+        d_ad = advetiment_field.objects.get(pk=id)
+        d_ad.delete()
+
+        return redirect('/writer/ad_view/')
+
 
 def view_adv(request):
     user = User.objects.get(pk=request.session['id'])

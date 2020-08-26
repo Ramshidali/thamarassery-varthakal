@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="താമരശ്ശേരി വാര്‍ത്തകള്" />
+    <meta property="og:description" content="thamarasseryvarhakal.in" />
+    <meta property= "og:image" content="http://thamasseryvarthakal.in/static/images/icon.png" />
     <title>താമരശ്ശേരി വാര്‍ത്തകള്‍</title>
     {% load  static %}
     <link rel="shortcut icon" href='{% static "images/icon.png" %}'>
@@ -53,12 +56,12 @@
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner ">
-                            <div class="item active">
+                            <div class="item active" style="height: 100px">
                                 <img id="carousel_img" src='{% static "images/tsy_2.png" %}' >
                             </div>
-                            {% for ad in adv %}
-                            <div class="item">
-                                <img id="carousel_img" src="{{ adv_carousel.adv_images.url }}">
+                            {% for ad in adv_carousel %}
+                            <div class="item" style="height: 100px">
+                                <img id="carousel_img" src="{{ ad.adv_images.url }}">
                             </div>
                             {% endfor %}
 
@@ -110,39 +113,39 @@
                         </div>
                     </div>
                     <div class="col-sm-5">
-{#                        <div class="scnd_carousel_col">#}
-{#                            <!-- carousel start -->#}
-{#                            <div id="tsy-carousel" class="container_carousel" >#}
-{#                                <div id="scndCarousel" class="carousel slide" data-ride="carousel" >#}
-{#                                    <!-- Indicators -->#}
-{#                                    <ol class="carousel-indicators">#}
-{#                                        <li data-target="#scndCarousel" data-slide-to="0" class="active"></li>#}
-{#                                        <li data-target="#scndCarousel" data-slide-to="1"></li>#}
-{#                                        <li data-target="#scndCarousel" data-slide-to="2"></li>#}
-{#                                    </ol>#}
-{#                                    <!-- Wrapper for slides -->#}
-{#                                    <div class="carousel-inner ">#}
-{#                                        <div class="item active">#}
-{#                                            <img id="scnd_carousel_img" src='{% static "images/raaz.jpg" %}' >#}
-{#                                        </div>#}
-{#                                        #}
-{#                                        {% for ad in adv %}#}
-{#                                            <div class="item">#}
-{#                                                <img id="carousel_img" src="{{ ad.adv_images.url }}">#}
-{#                                            </div>#}
-{#                                        {% endfor %}#}
-{##}
-{#                                        <!-- Left and right controls -->#}
-{#                                        <a class="left carousel-control" href="#scndCarousel" role="button" data-slide="prev">#}
-{#                                            <span class="sr-only">Previous</span>#}
-{#                                        </a>#}
-{#                                        <a class="right carousel-control" href="#scndCarousel" role="button" data-slide="next">#}
-{#                                            <span class="sr-only">Next</span>#}
-{#                                        </a>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
+                        <div class="scnd_carousel_col">
+                            <!-- carousel start -->
+                            <div id="tsy-carousel" class="container_carousel" >
+                                <div id="scndCarousel" class="carousel slide" data-ride="carousel" >
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#scndCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#scndCarousel" data-slide-to="1"></li>
+                                        <li data-target="#scndCarousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner ">
+                                        <div class="item active" style="height: 65px">
+                                            <img id="scnd_carousel_img" src='{% static "images/raaz.jpg" %}'>
+                                        </div>
+
+                                        {% for ad in adv_small %}
+                                            <div class="item" style="height: 65px">
+                                                <img id="carousel_img" src="{{ ad.adv_images.url }}">
+                                            </div>
+                                        {% endfor %}
+
+                                        <!-- Left and right controls -->
+                                        <a class="left carousel-control" href="#scndCarousel" role="button" data-slide="prev">
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#scndCarousel" role="button" data-slide="next">
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 {#                        <img src='{{ adv_small.adv_images.url }}' width="100%" height="70px">#}
                     </div>
                 </div>
@@ -297,9 +300,11 @@
         <hr>
 
         <div class="row last_adv_banner">
+            {% for ad in adv_banner %}
             <div class="col-sm-12">
-                <img src='{{ adv_banner.adv_images.url }}' alt="" width="100%" height="100px">
+                <img src='{{ ad.adv_images.url }}' alt="" width="100%" height="100px">
             </div>
+            {% endfor %}
         </div>
         <hr>
     </div><!--bottom carousel area end-->
@@ -423,12 +428,12 @@
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner ">
-                        <div class="item active">
+                        <div class="item active" style="height: 100px">
                                 <img id="carousel_img" src='{% static "images/tsy_2.png" %}' >
                             </div>
-                            {% for ad in adv %}
-                            <div class="item">
-                                <img id="carousel_img" src="{{ adv_carousel.adv_images.url }}">
+                            {% for ad in adv_carousel %}
+                            <div class="item" style="height: 100px">
+                                <img id="carousel_img" src="{{ ad.adv_images.url }}">
                             </div>
                             {% endfor %}
                         

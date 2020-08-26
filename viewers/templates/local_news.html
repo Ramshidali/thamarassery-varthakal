@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="താമരശ്ശേരി വാര്‍ത്തകള്" />
+    <meta property="og:description" content="thamarasseryvarhakal.in" />
+    <meta property= "og:image" content="http://thamasseryvarthakal.in/static/images/icon.png" />
     <title>താമരശ്ശേരി വാര്‍ത്തകള്‍</title>
     {% load static %}
     <link rel="shortcut icon" href='{% static "images/icon.png" %}'>
@@ -63,11 +66,11 @@
                                         <li data-target="#myCarousel" data-slide-to="2"></li>
                                     </ol><!-- Wrapper for slides -->
                                     <div class="carousel-inner ">
-                                        <div class="item active">
+                                        <div class="item active" style="height: 100px">
                                             <img id="carousel_img" src='{% static "images/tsy_2.png" %}' >
                                         </div>
                                         {% for ad in adv_carousel %}
-                                            <div class="item">
+                                            <div class="item" style="height: 100px">
                                                 <img id="carousel_img" src="{{ ad.adv_images.url }}">
                                             </div>
                                         {% endfor %}<!-- Left and right controls -->
