@@ -25,7 +25,7 @@ SECRET_KEY = 'mef74ybbyg#j562!^_slw$lb2dx%604ue5othkfukg=ih_j-7j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['thamarasseryvarthakal.in']
 
 
 # Application definition
@@ -80,9 +80,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'mysql.connector.django',
         'NAME': 'thamarasseryvarthakal',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
+        'USER': 'admin',
+        'PASSWORD': 'Tsynews4',
+        'HOST': 'database-1.ck9quierau3e.us-east-2.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
