@@ -100,6 +100,9 @@
   .second_image_1{
       display: none;
   }
+  .second_image_2{
+      display: block;
+  }
 /* MOBILE VIEW*/
 
 @media (max-width:900px) {
@@ -109,6 +112,9 @@
     .scnd_name_img_col{
         text-align: center;
     }
+    .second_image_1{
+      display: block;
+  }
     .second_image_2 {
         display: none;
     }

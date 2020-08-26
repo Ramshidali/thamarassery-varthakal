@@ -305,6 +305,11 @@ def all_members(request):
 
         return render(request, 'all_members.html', members)
 
+def update_u_type(request,id):
+    type = request.POST['user_type']
+    registration.objects.filter(pk=id).update(user_type=type)
+    return redirect('/writer/all_members/')
+
 def pending_members(request):
     user = User.objects.get(pk=request.session['id'])
     user_type = registration.objects.get(id=user)
@@ -451,8 +456,10 @@ def u_approve(request,id):
         messages.success(request, 'Login Timeout, Please Login...')
         return render(request, 'login.html')
     else:
-        registration.objects.filter(pk=id).update(user_type="editor")
-        return redirect('/writer/all_members/')
+        type = request.POST['user_type']
+
+        registration.objects.filter(pk=id).update(user_type=type)
+        return redirect('/writer/pending_members/')
 
 
 
@@ -464,7 +471,7 @@ def u_reject(request,id):
     else:
         u_d = User.objects.get(pk=id)
         u_d.delete()
-        return redirect('/writer/all_members/')
+        return redirect('/writer/pending_members/')
 
 
 

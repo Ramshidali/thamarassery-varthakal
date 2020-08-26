@@ -38,6 +38,7 @@
                     <th>ID</th>
                     <th>Name</th>
                     <th>email</th>
+                    <th>Update</th>
                     <th>Add/Remove</th>
 
 
@@ -46,8 +47,15 @@
                         <td>{{ p.id }}</td>
                         <td>{{ p.first_name }} {{ p.last_name }}</td>
                         <td>{{ p.email }}</td>
-                        <td><a href="/writer/u_approve/{{ p.pk }}/" ><input type="button"  class="btn btn-primary" value="Approve"></a>
-                        <a href="/writer/u_reject/{{ p.pk }}/" ><input type="button"  class="btn btn-primary" value="Remove"></a></td>
+                         <td>
+                                <form action="/writer/u_approve/{{ p.pk }}/" class="form-container" method="post" enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    <input type="radio" name="user_type" value="admin">Admin
+                                    <input type="radio" name="user_type" value="editor">Editor
+
+                                        <input type="submit"  class="btn btn-primary" value="Approve">
+                                </form></td>
+                        <td><a href="/writer/u_reject/{{ p.pk }}/" ><input type="button"  class="btn btn-primary" value="Remove"></a></td>
                     </tr>
             {% endfor %}
                   

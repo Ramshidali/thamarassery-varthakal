@@ -16,6 +16,7 @@ urlpatterns = [
     path('ad_view/',views.view_adv,name='view_adv'),
     path('my_record/',views.my_record,name='my_record'),
     path('all_members/',views.all_members,name='all_members'),
+    path('update_user_type/<int:id>/',views.update_u_type,name='update_u_type'),
     path('pending_members/',views.pending_members,name='pending_members'),
     # path('view_profile/',views.view_profile,name='view_profile'),
     # path('update_profile/',views.update_profile,name='update_profile'),

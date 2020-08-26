@@ -37,20 +37,26 @@
                     <thead ><b> <p style="font-size:30px; text-align: center; color: white"  >Our Editors</p> </b></thead>
                     <th>ID</th>
                     <th>Name</th>
-                    <th>email</th>
+                    <th>Email</th>
+                    <th>Update</th>
                     <th>Remove</th>
 
                     {% for m in users %}
-
 
                         <tr>
                             <td>{{ m.id }}</td>
                             <td>{{ m.first_name }} {{ m.last_name }}</td>
                             <td>{{ m.email }}</td>
+                            <td>
+                                <form action="/writer/update_user_type/{{ m.pk }}/" class="form-container" method="post" enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    <input type="radio" name="user_type" value="admin">Admin
+                                    <input type="radio" name="user_type" value="editor">Editor
+
+                                        <input type="submit"  class="btn btn-primary" value="Update">
+                                </form>
                             <td><a href="/writer/u_reject/{{ m.pk }}/" ><input type="button"  class="btn btn-primary" value="Remove"></a></td>
                         </tr><br>
-
-
                     {% endfor %}
                 </table>
 
