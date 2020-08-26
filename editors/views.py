@@ -461,6 +461,15 @@ def u_approve(request,id):
         registration.objects.filter(pk=id).update(user_type=type)
         return redirect('/writer/pending_members/')
 
+def all_reject(request,id):
+    user = User.objects.get(pk=request.session['id'])
+    if user is None:
+        messages.success(request, 'Login Timeout, Please Login...')
+        return render(request, 'login.html')
+    else:
+        u_d = User.objects.get(pk=id)
+        u_d.delete()
+        return redirect('/writer/all_members/')
 
 
 def u_reject(request,id):
