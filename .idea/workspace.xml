@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49ea9d50-18ce-4ba7-aa42-1479080387f2" name="Default" comment="19-8-2020">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/index.css" afterPath="$PROJECT_DIR$/editors/static/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/Edit_About.html" afterPath="$PROJECT_DIR$/editors/templates/Edit_About.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/all_members.html" afterPath="$PROJECT_DIR$/editors/templates/all_members.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/pending editors.html" afterPath="$PROJECT_DIR$/editors/templates/pending editors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/urls.py" afterPath="$PROJECT_DIR$/editors/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/views.py" afterPath="$PROJECT_DIR$/editors/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsynews/settings.py" afterPath="$PROJECT_DIR$/tsynews/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,11 +26,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="84" column="26" lean-forward="false" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+            <state relative-caret-position="17">
+              <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -85,12 +78,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Edit_About.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Edit_About.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/editors/templates/Edit_About.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
               <caret line="36" column="72" lean-forward="false" selection-start-line="36" selection-start-column="72" selection-end-line="36" selection-end-column="72" />
-              <folding />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,11 +175,11 @@
         <option value="$PROJECT_DIR$/editors/templates/ad_view.html" />
         <option value="$PROJECT_DIR$/editors/static/css/index.css" />
         <option value="$PROJECT_DIR$/editors/urls.py" />
-        <option value="$PROJECT_DIR$/tsynews/settings.py" />
         <option value="$PROJECT_DIR$/editors/templates/all_members.html" />
         <option value="$PROJECT_DIR$/editors/templates/pending editors.html" />
         <option value="$PROJECT_DIR$/editors/views.py" />
         <option value="$PROJECT_DIR$/editors/templates/Edit_About.html" />
+        <option value="$PROJECT_DIR$/tsynews/settings.py" />
       </list>
     </option>
   </component>
@@ -1191,14 +1186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="84" column="26" lean-forward="false" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/editors/templates/all_members.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1247,6 +1234,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="36" column="72" lean-forward="false" selection-start-line="36" selection-start-column="72" selection-end-line="36" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding />
         </state>
       </provider>
