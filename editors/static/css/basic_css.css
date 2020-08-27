@@ -39,9 +39,9 @@ a:hover{
     font-family: MLTTKarthikaUni;
     font-size: 20px;
     color:#000000;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 22px;
-    text-align: left;
+    text-align: justify;
 }
 .news_content{
     font-family: MLTTKarthikaUni;
