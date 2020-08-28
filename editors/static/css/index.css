@@ -15,6 +15,10 @@
     height: 200px;
     padding: 5px 0px 5px 0px;
 }
+.main_news_image_b{
+    height: 100px;
+    width: 190px;
+}
 .local_news_image{
     width: 100%;
     height: 200px;
@@ -103,59 +107,115 @@
   .second_image_2{
       display: block;
   }
+  .container{
+      padding-right: 5px;
+      padding-left: 5px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  .for-mobile-view{
+      display: none;
+  }
 /* MOBILE VIEW*/
 
 @media (max-width:900px) {
-    body{
+    body {
         padding: 0px;
     }
-    .scnd_name_img_col{
+
+    .scnd_name_img_col {
         text-align: center;
     }
-    .second_image_1{
-      display: block;
-  }
+
+    .second_image_1 {
+        display: block;
+    }
+
     .second_image_2 {
         display: none;
     }
-    .breaking-news-head{
+
+    .breaking-news-head {
         font-size: 10px;
     }
-    .mobile_view_non_hr{
+
+    .mobile_view_non_hr {
         display: none;
     }
-    .calender{
+
+    .calender {
         display: none;
     }
-    .onoffswitch3-active .onoffswitch3-switch{
+
+    .onoffswitch3-active .onoffswitch3-switch {
         width: 95px;
     }
-    .namerow{
+
+    .namerow {
         display: none;
     }
-    .top_brakeline{
+
+    .top_brakeline {
         display: none;
     }
-    .carousel_row{
+
+    .carousel_row {
         display: none;
     }
-    .carousel_brakeline{
+
+    .carousel_brakeline {
         display: none;
     }
-    .date_area{
+
+    .date_area {
         border: none;
         display: none;
     }
-    .adv_area_2{
+
+    .adv_area_2 {
         padding: 0;
         margin: 0;
     }
-    .adv_area_21{
+
+    .adv_area_21 {
         padding: 0;
         margin: 10px 0px 10px 0px;
     }
-    .scnd_name_img_col{
-        padding: 20px 0px 20px 0px;
+
+    .scnd_name_img_col {
+        padding: 10px 0px 10px 0px;
         margin: 0px;
+    }
+
+    .scrollmenu {
+        margin-top: 10px;
+    }
+
+    .gulf_news_img {
+        display: none;
+    }
+    .g-nws-row{
+        padding:0px;
+        margin-left: 15px;
+    }
+    .heading_news_types_lnm{
+        padding: 5px 0px 0px 0px;
+    }
+    .local_news_table{
+        padding: 5px 0px 0px 0px;
+    }
+    .main_news_head_mob{
+        display: inline list-item;
+        list-style: square;
+    }
+    .main_news_head_mob_li{
+        list-style: none;
+    }
+    .main_news_image_b{
+        width: 100%;
+        height: 200px;
+    }
+    .for-mobile-view{
+        display: inline;
     }
 }

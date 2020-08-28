@@ -26,7 +26,7 @@
             <div class="container nav_container"><!--nav container-->
                 <div class="row mob_name_row">
                     <div class="col-sm-12 mob_name_col" style="text-align: center;">
-                        <img src='{% static "images/tsy.png" %}' alt="">
+                        <img src='{% static "images/tsy.png" %}' style="width: 70%">
                     </div>
                 </div>
                 <div class="row namerow">
@@ -40,10 +40,10 @@
                     </div>
                     </div>
                     <div class="col-sm-6 namediv" style="padding-top: 10px;">
-                        <div class="img_colum">
-                            <img class="top_tsyname_img" src='{% static "images/tsy.png" %}'>
-                        </div>
+                    <div class="img_colum">
+                        <img class="top_tsyname_img" src='{% static "images/tsy.png" %}' style="width: 50%;float: right;">
                     </div>
+                </div>
                 </div>
                 <hr class="top_brakeline">
             </div><!--nav container end-->
@@ -102,6 +102,8 @@
             <a href="/local/" class="navitem">Local</a>
             <a href="/kerala/" class="navitem">Kerala</a>
             <a href="/international/" class="navitem">International</a>
+            <a href="/sports/" class="navitem">Sports</a>
+            <a href="/more/" class="navitem">More</a>
             <a href="/about/" class="navitem">About Us</a>
         </div><!-- navbar end -->
 
@@ -243,6 +245,16 @@
                                 {% for l in local_n %}
                                     <tr style="padding: 0px; margin: 0px;">
                                         <td><a href="/news_view/{{ l.pk }}/"><li><i  aria-hidden="true"></i>{{ l.news_title }}</li></a><a href="/local/"><span class="News_type_span" style="color: darkgoldenrod; font-size: 10px;">LOCAL NEWS</span></a></td>
+                                    </tr>
+                                {% endfor %}
+                                {% for s in sports_n %}
+                                    <tr style="padding: 0px; margin: 0px;">
+                                        <td><a href="/news_view/{{ s.pk }}/"><li><i  aria-hidden="true"></i>{{ s.news_title }}</li></a><a href="/sports/"><span class="News_type_span" style="color: darkgoldenrod; font-size: 10px;">SPORTS NEWS</span></a></td>
+                                    </tr>
+                                {% endfor %}
+                                {% for m in more_n %}
+                                    <tr style="padding: 0px; margin: 0px;">
+                                        <td><a href="/news_view/{{ m.pk }}/"><li><i  aria-hidden="true"></i>{{ m.news_title }}</li></a><a href="/more/"><span class="News_type_span" style="color: darkgoldenrod; font-size: 10px;">MORE NEWS</span></a></td>
                                     </tr>
                                 {% endfor %}
                                 </tbody>

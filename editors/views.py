@@ -173,12 +173,10 @@ def post_news(request):
         region = request.POST['region']
         print(region)
 
-        if (region == '2'):
-            district = request.POST['d_district']
-        elif (region == '3'):
-            district = request.POST['d_district']
-        else:
+        if (region == '1'):
             district = request.POST['district']
+        else:
+            district = request.POST['d_district']
         print(district)
 
         if (district == '11'):

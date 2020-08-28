@@ -3,14 +3,9 @@ function toggle_district(selectedRadioId, targetId){
   document.getElementById(targetId).style.display = "inline";
   document.getElementById("id_district").disabled = false;
  }
- else if(selectedRadioId == "Gulf"){
+ else if(selectedRadioId != "kerala"){
   document.getElementById(targetId).style.display = "none";
   document.getElementById("id_district").disabled = true;
- } else{
-  if(selectedRadioId == "International"){
-  document.getElementById(targetId).style.display = "none";
-  document.getElementById("id_district").disabled = true;
- }
  }
 }
 

@@ -4,7 +4,7 @@
     margin: 0px;
 }
 .mob_name_col{
-    padding: 20px 0px 20px 0px;
+    padding: 10px 0px 10px 0px;
     margin: 0px;
 }
 .news_type{
@@ -19,6 +19,9 @@
     text-align: center;
     border: 1px solid#c7c7c7;
 }
+.mobile_carousel{
+    display: none;
+}
 
 
 /* MOBILE VIEW*/
@@ -26,6 +29,9 @@
 @media (max-width:900px) {
     .mob_name_row{
         display: contents;
+    }
+    .scrollmenu{
+        margin-top: 10px;
     }
     .news_type{
         display: contents;
@@ -48,7 +54,8 @@
     div.scrollmenu {
          border-radius: 10px;
     }
-
-
-
+    .mobile_carousel {
+        display: inline;
+        padding: 0px;
+    }
 }

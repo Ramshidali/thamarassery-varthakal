@@ -54,6 +54,9 @@ def latest(request):
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
     n_local = news_field.objects.filter(news_district_id=11).order_by('-id')[:1]
+    n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
+    n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
+
 
     image = news_nation.objects.filter(pk='4')
 
@@ -67,6 +70,8 @@ def latest(request):
         'kerala_n' : n_kerala,
         'gulf_n' : n_gulf,
         'local_n' : n_local,
+        'sports_n' : n_sports,
+        'more_n' : n_more,
 
         'adv_carousel' : adv_view_carousel,
         'adv_side' : adv_view_side,
@@ -83,6 +88,8 @@ def gulf(request):
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
     n_local = news_field.objects.filter(news_district_id=11).order_by('-id')[:1]
+    n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
+    n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
     image = news_nation.objects.filter(pk='2')
 
@@ -96,6 +103,8 @@ def gulf(request):
         'kerala_n': n_kerala,
         'gulf_n': n_gulf,
         'local_n': n_local,
+        'sports_n': n_sports,
+        'more_n': n_more,
 
         'adv_carousel' : adv_view_carousel,
         'adv_side' : adv_view_side,
@@ -112,6 +121,8 @@ def internation(request):
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
     n_local = news_field.objects.filter(news_district_id=11).order_by('-id')[:1]
+    n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
+    n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
     adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
@@ -121,10 +132,12 @@ def internation(request):
 
     inter_news ={
         'news': inter,
-        'internation': inter,
+        'internation': m_inter,
         'kerala_n': n_kerala,
         'gulf_n': n_gulf,
         'local_n': n_local,
+        'sports_n': n_sports,
+        'more_n': n_more,
 
         'adv_carousel' : adv_view_carousel,
         'adv_side' : adv_view_side,
@@ -141,6 +154,8 @@ def kerala(request):
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
     n_local = news_field.objects.filter(news_district_id=11).order_by('-id')[:1]
+    n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
+    n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
     adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
@@ -154,6 +169,8 @@ def kerala(request):
         'kerala_n': n_kerala,
         'gulf_n': n_gulf,
         'local_n': n_local,
+        'sports_n': n_sports,
+        'more_n': n_more,
 
         'adv_carousel' : adv_view_carousel,
         'adv_side' : adv_view_side,
@@ -161,6 +178,71 @@ def kerala(request):
         'logo_img': image,
     }
     return render(request,'news_types.html',k_news)
+
+def sports(request):
+    sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:100]
+    inter = news_field.objects.filter(news_nation_id=3).order_by('-id')[:1]
+    n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
+    n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
+    n_local = news_field.objects.filter(news_district_id=11).order_by('-id')[:1]
+    n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
+    n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
+
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
+    adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
+    adv_view_banner = advetiment_field.objects.filter(ad_position_id=4).order_by('-id')
+
+    image = news_nation.objects.filter(pk='5')
+
+    s_news = {
+        'news': sports,
+        'internation': inter,
+        'kerala_n': n_kerala,
+        'gulf_n': n_gulf,
+        'local_n': n_local,
+        'sports_n': n_sports,
+        'more_n': n_more,
+
+        'adv_carousel': adv_view_carousel,
+        'adv_side': adv_view_side,
+        'adv_banner': adv_view_banner,
+        'logo_img': image,
+    }
+
+    return render(request, 'news_types.html', s_news)
+
+
+def more(request):
+    more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:100]
+    inter = news_field.objects.filter(news_nation_id=3).order_by('-id')[:1]
+    n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
+    n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
+    n_local = news_field.objects.filter(news_district_id=11).order_by('-id')[:1]
+    n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
+    n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
+
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
+    adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
+    adv_view_banner = advetiment_field.objects.filter(ad_position_id=4).order_by('-id')
+
+    image = news_nation.objects.filter(pk='6')
+
+    s_news = {
+        'news': more,
+        'internation': inter,
+        'kerala_n': n_kerala,
+        'gulf_n': n_gulf,
+        'local_n': n_local,
+        'sports_n': n_sports,
+        'more_n': n_more,
+
+        'adv_carousel': adv_view_carousel,
+        'adv_side': adv_view_side,
+        'adv_banner': adv_view_banner,
+        'logo_img': image,
+    }
+
+    return render(request, 'news_types.html', s_news)
 
 
 
@@ -185,6 +267,8 @@ def local(request):
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
     n_local = news_field.objects.filter(news_district_id=11).order_by('-id')[:1]
+    n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
+    n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
     adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
@@ -213,6 +297,8 @@ def local(request):
         'gulf_n': n_gulf,
         'local_n': n_local,
         'type_image': news_page_type,
+        'sports_n': n_sports,
+        'more_n': n_more,
 
         'adv_carousel': adv_view_carousel,
         'adv_side': adv_view_side,
@@ -230,6 +316,8 @@ def news_view(request,id):
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
     n_local = news_field.objects.filter(news_district_id=11).order_by('-id')[:1]
+    n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
+    n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
     adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
@@ -242,6 +330,8 @@ def news_view(request,id):
         'kerala_n': n_kerala,
         'gulf_n': n_gulf,
         'local_n': n_local,
+        'sports_n': n_sports,
+        'more_n': n_more,
 
         'adv_carousel': adv_view_carousel,
         'adv_side': adv_view_side,

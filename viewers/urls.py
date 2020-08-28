@@ -15,6 +15,8 @@ urlpatterns = (
     path('local/',views.local,name='local'),
     path('latest/',views.latest,name='latest'),
     path('international/',views.internation,name='international'),
+    path('sports/',views.sports,name='sports'),
+    path('more/',views.more,name='more'),
     path('news_view/<int:id>/',views.news_view,name='news_view'),
     path('about/', views.about,name='about'),
 )
