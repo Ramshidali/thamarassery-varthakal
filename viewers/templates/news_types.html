@@ -181,17 +181,19 @@
                     </div>
 
                     {% for n in news %}
-                    <div class="row row_for_news"><!--news row-->
+
+{#                    <div class="row row_for_news"><!--news row-->#}
+                        <div class="col-md-12" style="padding: 0px 0px 0px 15px;">
                         <a href="/news_view/{{ n.pk }}/">
-                            <div class="col-sm-4">
-                                <img src={{ n.news_image.url }} alt="" width="100%">
-                            </div>
-                            <div class="col-sm-8 news_head">
-                                <div style="width: 100%;">{{ n.news_title }}</div>
+                            <div class="row row_for_news" style="padding: 0px"><!--news row-->
+                                <div class="chip">
+                                    <img src="{{ n.news_image.url }}" alt="Person" width="96" height="96">
+                                    {{ n.news_title|truncatechars:70 }}
+                                </div>
                             </div>
                         </a>
-                    </div>
-                        <hr class="all_hr">
+                        </div>
+                        <hr>
                     {% endfor %}
 
 

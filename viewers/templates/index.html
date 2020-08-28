@@ -269,22 +269,17 @@
                             <hr class="main_news_hr">
                         </div>
 
-
-                        {% for gulf in gulf_news %}
-                        <div class="col-md-12" style="padding: 0px;">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <a href="/news_view/{{ gulf.pk }}/">
-                                        <div class="col-md-3" style="padding: 0;">
-                                            <img src="{{ gulf.news_image.url }}" alt="" class="gulf_news_img" style="width: 100px;height: 70px;margin-left: 15px;">
-                                        </div>
-                                        <div class="col-md-9 g-nws-row" >
-                                            <div class="main_news_head main_news_head_mob">{{ gulf.news_title }} </div>
-                                        </div>
-                                    </a>
+                    {% for gulf in gulf_news %}
+                        <div class="col-md-12" style="padding: 10px 30px 0px 30px;">
+                            <a href="/news_view/{{ gulf.pk }}/">
+                                <div class="row row_for_news" style="padding: 5px"><!--news row-->
+                                    <div class="chip">
+                                        <img src="{{ gulf.news_image.url }}" alt="Person" width="96" height="96">{{ gulf.news_title|truncatechars:70 }}
                                 </div>
                             </div>
+                        </a>
                         </div>
+                        <hr>
                         {% endfor %}
                     </div><!--news gulf end-->
                 </div><!--main news area finished-->

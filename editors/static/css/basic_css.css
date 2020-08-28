@@ -10,6 +10,8 @@ body{
 
 hr{
     border-top: 1px dotted;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .lcl_table_col{
     display: inline;
@@ -25,9 +27,11 @@ hr{
     text-decoration: none;
     margin: 0px;
 }
+
 td{
     padding: 15px;
 }
+
 a:visited{
     color: #000;
 }
