@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta property="og:title" content="താമരശ്ശേരി വാര്‍ത്തകള്" />
-    <meta property="og:description" content="thamarasseryvarhakal.in" />
-    <meta property= "og:image" content="http://thamasseryvarthakal.in/static/images/icon.png" />
+     <meta property="og:title" content="താമരശ്ശേരി വാര്‍ത്തകള്‍">
+    <meta property="og:description" content="{{ n_view.news_title }}">
+    <meta property="og:image" content="static/images/icon.png">
+    <meta property="og:url" content="thamarasseryvarthakal.in">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>താമരശ്ശേരി വാര്‍ത്തകള്‍</title>
     {% load static %}
@@ -175,7 +176,7 @@
 
                    <div class="col-sm-12" style="margin: 0px; padding: 0px;"><!--n_content-->
                        <div class="col-sm-12 news_content" style="margin: 0px; padding: 0px;">
-                        {{ n_view.news_content }}
+                        {{ n_view.news_content|linebreaks }}
                         <hr style="margin: 15px 0px 15px 0px;">
                     </div>
 
