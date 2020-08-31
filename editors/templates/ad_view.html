@@ -19,6 +19,7 @@
         <a href="/writer/all_members/"><i class="fas fa-registered"></i> All Members</a>
         <a href="/writer/pending_members/"><i class="fas fa-table"></i> Pending Members</a>
         <a href="/writer/whatsapp_link/"><i class="fas fa-link"></i> Whatsapp Link</a>
+        <a href="/writer/spl_img/"><i class="fas fa-gift"></i> Special Day Wishes</a>
         <a href="/writer/edit_about/"><i class="fas fa-edit"></i> Edit About</a>
         {% endif %}
         <a href="/writer/adv_page/"><i class="fas fa-user"></i>Post Advertisement</a>
@@ -35,21 +36,22 @@
 
                 <table  class="table ">
                     <thead ><b> <p style="font-size:30px; text-align: center; color: white" >Advetisements</p> </b></thead>
-                <th style="display: none">id</th>
+                    <th style="display: none">id</th>
                     <th>Date of Publish</th>
+                    <th colspan="4">Image</th>
                     <th id="head">Headding</th>
-{#                    <th colspan="4">Image</th>#}
                     <th>Remove</th>
 
                     {% for r in ads %}
 
                     <tr>
-                            <td id="id_content" style="display: none">{{ r.pk }}</td>
-                            <td>{{ r.date_of_publish }}</td>
-                            <td>{{ r.adv_content }}</td>
-{#                            <td colspan="4" width="100%" height="200px">{{ r.adv_images.url }}</td>#}
-                            <td style="text-align: center">
-                            <a href="/writer/ad_remove/{{ r.pk }}/" ><input type="button"  value="Remove"></a></td>
+                        <td id="id_content" style="display: none">{{ r.pk }}</td>
+                        <td>{{ r.date_of_publish }}</td>
+                        <td colspan="4" height="70px"><img src="{{ r.adv_images.url }}" style="width: 100%;height: 100%;"></td>
+                        <td>{{ r.adv_content }}</td>
+                        <td style="text-align: center">
+                            <a href="/writer/ad_remove/{{ r.pk }}/" ><input type="button"  value="Remove"></a>
+                        </td>
                     </tr>
                     {% endfor %}
 

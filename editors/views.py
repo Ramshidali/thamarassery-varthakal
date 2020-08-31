@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.core.files.storage import FileSystemStorage
 from . models import registration,news_field,advetiment_field,adv_position,news_place,\
-    news_nation,news_district,whatsapp_link,aboutus_content,aboutus
+    news_nation,news_district,w_link,aboutus_content,aboutus,special_days
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,logout
 from django.contrib import messages
@@ -53,8 +53,6 @@ def signup(request):
 
             '''
         return redirect('/writer/registration/')
-
-
 
 def login(request):
     return render(request,'login.html')
@@ -129,9 +127,6 @@ def signin(request):
                 messages.success(request, 'Your Membership is not Accepted Contact Your Admin...!')
                 return redirect('/writer/')
 
-
-
-
 def edit_corner(request):
     user = User.objects.get(pk=request.session['id'])
     user_type = registration.objects.get(id=user)
@@ -153,8 +148,6 @@ def edit_corner(request):
         }
 
         return render(request,'admin_page.html',news)
-
-
 
 def post_news(request):
     editor = User.objects.get(pk=request.session['id'])
@@ -203,9 +196,6 @@ def post_news(request):
         news.save()
         return redirect('/writer/edit_corner/')
 
-
-
-
 def adv_page(request):
     user = User.objects.get(pk=request.session['id'])
     user_type = registration.objects.get(id=user)
@@ -251,7 +241,6 @@ def ad_remove(request,id):
 
         return redirect('/writer/ad_view/')
 
-
 def view_adv(request):
     user = User.objects.get(pk=request.session['id'])
     user_type = registration.objects.get(id=user)
@@ -268,7 +257,6 @@ def view_adv(request):
         }
         return render(request, 'ad_view.html',advs)
 
-
 def my_record(request):
     user = User.objects.get(pk=request.session['id'])
     user_type = registration.objects.get(id=user)
@@ -283,7 +271,7 @@ def my_record(request):
         user = User.objects.get(pk=request.session['id'])
         data = news_field.objects.filter(editor_id=user.pk).order_by('-published_date')
         nation = news_nation.objects.all()
-        whatsapp = whatsapp_link.objects.latest('id')
+        whatsapp = w_link.objects.order_by('-id')[:1]
         record = {
             'records': data,
             'nation': nation,
@@ -294,8 +282,6 @@ def my_record(request):
         }
 
         return render(request, 'my_records.html', record)
-
-
 
 def all_members(request):
     user = User.objects.get(pk=request.session['id'])
@@ -372,8 +358,6 @@ def pending_members(request):
 #
 #     return redirect('/writer/view_profile/')
 
-
-
 def whatsapp(request):
     user = User.objects.get(pk=request.session['id'])
     user_type = registration.objects.get(id=user)
@@ -381,11 +365,28 @@ def whatsapp(request):
         messages.success(request, 'Login Timeout, Please Login...')
         return render(request, 'login.html')
     else:
-        u_type = {
-            'usertype': user_type
+        w_details = w_link.objects.all()
+        details = {
+            'usertype': user_type,
+            'w_link' : w_details
         }
-        return render(request,'whatsapp.html',u_type)
+        return render(request,'whatsapp.html',details)
 
+def upload_link(request):
+    user = User.objects.get(pk=request.session['id'])
+    if user is None:
+        messages.success(request, 'Login Timeout, Please Login...')
+        return render(request, 'login.html')
+    else:
+        link = request.POST['link']
+        upload =  w_link(editor_id=user,whatsapp=link)
+        upload.save()
+        return redirect('/writer/whatsapp_link/')
+
+def delete_link(request,id):
+    d_link = w_link.objects.get(pk=id)
+    d_link.delete()
+    return redirect('/writer/whatsapp_link/')
 
 def editabout(request):
     user = User.objects.get(pk=request.session['id'])
@@ -400,11 +401,9 @@ def editabout(request):
     }
     return render(request,'Edit_About.html',context)
 
-
-
-
 def add_user_about(request):
     user = User.objects.get(pk=request.session['id'])
+
     if user is None:
         messages.success(request, 'Login Timeout, Please Login...')
         return render(request, 'login.html')
@@ -425,7 +424,6 @@ def delete_about_editors(request,id):
     d_editors.delete()
     return redirect('/writer/edit_about/')
 
-
 def add_about_content(request):
     user = User.objects.get(pk=request.session['id'])
     if user is None:
@@ -438,28 +436,49 @@ def add_about_content(request):
         add_content.save()
     return redirect('/writer/edit_about/')
 
+def spl_img_page(request):
+    user = User.objects.get(pk=request.session['id'])
+    user_type = registration.objects.get(id=user)
+    spl_img = special_days.objects.order_by('-id')
 
+    context = {
+        'spl' :spl_img,
+        'usertype': user_type,
+    }
+    return render(request,'special_wishes.html',context)
 
-def delete_about_content(request,id):
-    d_contents = aboutus_content.objects.get(pk=id)
-    d_contents.delete()
-    return redirect('/writer/edit_about/')
-
-
-
-def upload_link(request):
+def upload_spl_img(request):
     user = User.objects.get(pk=request.session['id'])
     if user is None:
         messages.success(request, 'Login Timeout, Please Login...')
         return render(request, 'login.html')
     else:
-        link = request.POST['link']
-        upload =  whatsapp_link(editor_id=user, whatsapp_link_urls=link)
-        upload.save()
-        return redirect('/writer/whatsapp_link/')
 
+        x = datetime.datetime.now()
+        wish_name = request.POST['w_name']
 
+        img = request.FILES['image']
+        fs = FileSystemStorage()
+        fs.save(img.name, img)
 
+        spl_post = special_days(editor_id=user,whish_head=wish_name,wishing_image=img,date_of_publish=x)
+        spl_post.save()
+        return redirect('/writer/spl_img/')
+
+def spl_img_delete(request,id):
+    user = User.objects.get(pk=request.session['id'])
+    if user is None:
+        messages.success(request, 'Login Timeout, Please Login...')
+        return render(request, 'login.html')
+    else:
+        d_spl_img = special_days.objects.get(pk=id)
+        d_spl_img.delete()
+        return redirect('/writer/spl_img/')
+
+def delete_about_content(request,id):
+    d_contents = aboutus_content.objects.get(pk=id)
+    d_contents.delete()
+    return redirect('/writer/edit_about/')
 
 def u_approve(request,id):
     user = User.objects.get(pk=request.session['id'])
@@ -482,7 +501,6 @@ def all_reject(request,id):
         u_d.delete()
         return redirect('/writer/all_members/')
 
-
 def u_reject(request,id):
     user = User.objects.get(pk=request.session['id'])
     if user is None:
@@ -493,8 +511,6 @@ def u_reject(request,id):
         u_d.delete()
         return redirect('/writer/pending_members/')
 
-
-
 def n_reject(request,id):
     user = User.objects.get(pk=request.session['id'])
     if user is None:
@@ -504,7 +520,6 @@ def n_reject(request,id):
         n_d = news_field.objects.get(pk=id)
         n_d.delete()
         return redirect('/writer/my_record/')
-
 
 def logout_view(request):
     logout(request)

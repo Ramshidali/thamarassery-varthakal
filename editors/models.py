@@ -65,12 +65,22 @@ class news_field(models.Model):
     def __str__(self):
         return self.news_title
 
-class whatsapp_link(models.Model):
-    whatsapp_link_urls = models.URLField(db_index=True, unique=True, blank=True)
+class w_link(models.Model):
+    whatsapp = models.CharField(max_length=500,null=False,blank=False)
     editor_id = models.ForeignKey(User,on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.whatsapp_link_urls
+        return self.whatsapp
+
+class special_days(models.Model):
+    date_of_publish = models.DateTimeField(null=False,blank=False)
+    whish_head = models.CharField(max_length=50,null=False,blank=False)
+    wishing_image = models.ImageField(blank=False,null=False)
+    editor_id = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.wishing_image
+
 
 
 class aboutus(models.Model):

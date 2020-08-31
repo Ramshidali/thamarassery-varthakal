@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from  editors.models import registration,news_field,advetiment_field,news_place,news_nation,aboutus,aboutus_content
+from  editors.models import registration,news_field,advetiment_field,news_place,news_nation,aboutus,aboutus_content,special_days
 from django.contrib.auth.models import User
 from datetime import date,datetime
 
@@ -22,6 +22,7 @@ def index(request):
     adv_view_small = advetiment_field.objects.filter(ad_position_id=2).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')
     adv_view_banner = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    wish_details = special_days.objects.order_by('-id')[:1]
 
 
     all_news = {
@@ -41,6 +42,7 @@ def index(request):
         'adv_small' : adv_view_small,
         'adv_side' : adv_view_side,
         'adv_banner': adv_view_banner,
+        'wish' : wish_details,
     }
 
 

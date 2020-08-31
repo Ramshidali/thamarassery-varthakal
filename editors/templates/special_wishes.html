@@ -38,14 +38,16 @@
             </h1>
             <br class="mobile_view">
             <div class="col-md-offset-4 col-md-4 col-sm-4 full_align_whatsapp">
-                <form action="/writer/upload_link/" method="post" enctype="multipart/form-data" class="whatsapp_form">
+                <form action="/writer/upload_spl_img/" method="post" enctype="multipart/form-data" class="whatsapp_form">
                 {% csrf_token %}
                     <div class="form-n_edit">
 
-                        <h4>Whatsapp Link</h4><br>
+                        <h4>Wishes</h4><br>
 
-                        <textarea name="link" class="link" placeholder="Enter Link" style="width: 200px;min-height: 250px;" required></textarea><br><br>
-
+                        <div class="image_field">
+                            <input type="file" id="file" name="image" accept="image/*" onchange="return fileValidation()" required style="border: 1px solid; border-radius: 25px; padding: 0; width: 200px;">
+                        </div><br>
+                        <input type="text" id="w_name" name="w_name" style="width: 200px" required><br><br>
                         <div class="button">
                             <input type="submit" name="submit" class="button" value="Post">
                         </div>
@@ -55,23 +57,34 @@
             </div>
         </div>
     </div><br>
+
+
 <table  class="table ">
 
-    <th>id</th>
-    <th>Whatsapp Link</th>
+    <th style="display: none">id</th>
+    <th>Date of Publish</th>
+    <th colspan="4">Wishes</th>
     <th>Remove</th>
 
-    {% for r in w_link %}
+    {% for r in spl %}
         <tr>
-            <td id="id_content">{{ r.pk }}</td>
-            <td>{{ r.whatsapp }}</td>
+            <td id="id_content" style="display: none">{{ r.pk }}</td>
+            <td>{{ r.date_of_publish }}</td>
+            <td>{{ r.whish_head }}</td>
+            <td colspan="4">
+                <img src="{{ r.wishing_image.url }}" style="width: 100%;height: 100px">
+            </td>
             <td style="text-align: center">
-                <a href="/writer/whatsapp_reject/{{ r.pk }}/" ><input type="button"  class="btn btn-primary" value="Remove"></a>
+                <a href="/writer/wish_reject/{{ r.pk }}/" ><input type="button"  class="btn btn-primary" value="Remove"></a>
             </td>
         </tr>
     {% endfor %}
 
 </table>
+
+
+
+
 
     <script src='{% static "js/bootstrap.min.js" %}'></script>
     <script src='{% static "js/jquery.min.js" %}'></script>
