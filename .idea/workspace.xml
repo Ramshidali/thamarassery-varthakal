@@ -2,26 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49ea9d50-18ce-4ba7-aa42-1479080387f2" name="Default" comment="19-8-2020">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/editors/templates/special_wishes.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/editors/migrations/0002_aboutus.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/editors/migrations/0003_aboutus_content.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/editors/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newdb2.sql" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/Edit_About.html" afterPath="$PROJECT_DIR$/editors/templates/Edit_About.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/ad_view.html" afterPath="$PROJECT_DIR$/editors/templates/ad_view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/admin_page.html" afterPath="$PROJECT_DIR$/editors/templates/admin_page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/advetisement.html" afterPath="$PROJECT_DIR$/editors/templates/advetisement.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/ad_view.html" afterPath="$PROJECT_DIR$/editors/templates/ad_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/urls.py" afterPath="$PROJECT_DIR$/editors/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/models.py" afterPath="$PROJECT_DIR$/editors/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/views.py" afterPath="$PROJECT_DIR$/editors/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/view-profile.html" afterPath="$PROJECT_DIR$/editors/templates/view-profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/pending editors.html" afterPath="$PROJECT_DIR$/editors/templates/pending editors.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/all_members.html" afterPath="$PROJECT_DIR$/editors/templates/all_members.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/my_records.html" afterPath="$PROJECT_DIR$/editors/templates/my_records.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/templates/index.html" afterPath="$PROJECT_DIR$/viewers/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/pending editors.html" afterPath="$PROJECT_DIR$/editors/templates/pending editors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/special_wishes.html" afterPath="$PROJECT_DIR$/editors/templates/special_wishes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/view-profile.html" afterPath="$PROJECT_DIR$/editors/templates/view-profile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/whatsapp.html" afterPath="$PROJECT_DIR$/editors/templates/whatsapp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/views.py" afterPath="$PROJECT_DIR$/viewers/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,11 +35,103 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
+      <file leaf-file-name="ad_view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editors/templates/ad_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="87" column="1" lean-forward="false" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+            <state relative-caret-position="357">
+              <caret line="21" column="85" lean-forward="true" selection-start-line="21" selection-start-column="85" selection-end-line="21" selection-end-column="85" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#td#2;n#tr#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_page.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editors/templates/admin_page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="25" column="89" lean-forward="true" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="advetisement.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editors/templates/advetisement.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all_members.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editors/templates/all_members.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Edit_About.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editors/templates/Edit_About.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="89" lean-forward="true" selection-start-line="22" selection-start-column="89" selection-end-line="22" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pending editors.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editors/templates/pending editors.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registration.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editors/templates/registration.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="special_wishes.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editors/templates/special_wishes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="25" column="89" lean-forward="true" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view-profile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editors/templates/view-profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="whatsapp.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/editors/templates/whatsapp.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="25" column="89" lean-forward="true" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -127,23 +209,23 @@
         <option value="$PROJECT_DIR$/editors/static/js/cut-and-past.js" />
         <option value="$PROJECT_DIR$/editors/static/js/rightclick.js" />
         <option value="$PROJECT_DIR$/editors/static/css/index.css" />
+        <option value="$PROJECT_DIR$/viewers/views.py" />
+        <option value="$PROJECT_DIR$/viewers/templates/index.html" />
+        <option value="$PROJECT_DIR$/editors/models.py" />
+        <option value="$PROJECT_DIR$/editors/views.py" />
+        <option value="$PROJECT_DIR$/editors/urls.py" />
+        <option value="$PROJECT_DIR$/tsynews/settings.py" />
+        <option value="$PROJECT_DIR$/viewers/templates/news_view.html" />
+        <option value="$PROJECT_DIR$/editors/templates/my_records.html" />
+        <option value="$PROJECT_DIR$/editors/templates/ad_view.html" />
         <option value="$PROJECT_DIR$/editors/templates/admin_page.html" />
         <option value="$PROJECT_DIR$/editors/templates/advetisement.html" />
         <option value="$PROJECT_DIR$/editors/templates/all_members.html" />
         <option value="$PROJECT_DIR$/editors/templates/Edit_About.html" />
         <option value="$PROJECT_DIR$/editors/templates/pending editors.html" />
-        <option value="$PROJECT_DIR$/editors/templates/view-profile.html" />
-        <option value="$PROJECT_DIR$/viewers/templates/news_view.html" />
         <option value="$PROJECT_DIR$/editors/templates/special_wishes.html" />
-        <option value="$PROJECT_DIR$/viewers/views.py" />
-        <option value="$PROJECT_DIR$/viewers/templates/index.html" />
-        <option value="$PROJECT_DIR$/editors/templates/ad_view.html" />
-        <option value="$PROJECT_DIR$/editors/models.py" />
-        <option value="$PROJECT_DIR$/editors/templates/my_records.html" />
+        <option value="$PROJECT_DIR$/editors/templates/view-profile.html" />
         <option value="$PROJECT_DIR$/editors/templates/whatsapp.html" />
-        <option value="$PROJECT_DIR$/editors/views.py" />
-        <option value="$PROJECT_DIR$/editors/urls.py" />
-        <option value="$PROJECT_DIR$/tsynews/settings.py" />
       </list>
     </option>
   </component>
@@ -736,6 +818,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22306526" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -743,20 +826,20 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19967267" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2026578" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22425249" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22757475" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2026578" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -895,13 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/registration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/editors/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1021,27 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/all_members.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="84" lean-forward="false" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/view-profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="84" lean-forward="false" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/pending editors.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="84" lean-forward="false" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/editors/static/js/copy_text.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1063,30 +1118,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/templates/news_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/admin_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="108" column="4" lean-forward="false" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/editors/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/Edit_About.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1592">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -1105,20 +1139,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/advetisement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-653">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/ad_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="49" column="106" lean-forward="true" selection-start-line="49" selection-start-column="106" selection-end-line="49" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/editors/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1133,31 +1153,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/my_records.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="52" column="303" lean-forward="true" selection-start-line="52" selection-start-column="303" selection-end-line="52" selection-end-column="303" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/special_wishes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="32" column="98" lean-forward="true" selection-start-line="32" selection-start-column="98" selection-end-line="32" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/whatsapp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/editors/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="25" column="75" lean-forward="false" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1177,8 +1179,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="317">
           <caret line="87" column="1" lean-forward="false" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewers/templates/news_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2126">
+          <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/my_records.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/ad_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="85" lean-forward="true" selection-start-line="21" selection-start-column="85" selection-end-line="21" selection-end-column="85" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#td#2;n#tr#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/admin_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="25" column="89" lean-forward="true" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/advetisement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/all_members.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/Edit_About.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="89" lean-forward="true" selection-start-line="22" selection-start-column="89" selection-end-line="22" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/pending editors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/special_wishes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="25" column="89" lean-forward="true" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/view-profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/whatsapp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="25" column="89" lean-forward="true" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
           <folding />
         </state>
       </provider>
