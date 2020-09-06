@@ -6,6 +6,7 @@ from datetime import date,datetime
 # Create your views here.
 def index(request):
 
+    icon = "icon.png"
     news = news_field.objects.order_by('-id')[:40]
     gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:10]
     main_a = news_field.objects.filter(main_news=2).latest('id')
@@ -26,6 +27,7 @@ def index(request):
 
 
     all_news = {
+        "icon_img" : icon,
         'latest_news' : news,
         'gulf_news': gulf,
         'main_news_a' : main_a,

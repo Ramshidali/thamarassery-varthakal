@@ -80,9 +80,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'mysql.connector.django',
         'NAME': 'thamarasseryvarthakal',
-        'USER': 'admin',
-        'PASSWORD': 'Tsynews4',
-        'HOST': 'database-1.ck9quierau3e.us-east-2.rds.amazonaws.com',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
 }
