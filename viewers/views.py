@@ -19,10 +19,13 @@ def index(request):
     local_trvpdi_tbl = news_field.objects.filter(news_place_id=5).exclude(pk=local_trvpdi.pk).order_by('-id')[:5]
     breaking_news = news_field.objects.filter(breaking_news=2).order_by('-id')
 
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
-    adv_view_small = advetiment_field.objects.filter(ad_position_id=2).order_by('-id')
+
+    ad_view_top_full = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    ad_view_top_small = advetiment_field.objects.filter(ad_position_id=2).order_by('-id')[:1]
+    ad_view_aftrmain_small = advetiment_field.objects.filter(ad_position_id=2).exclude(id=ad_view_top_small).order_by('-id')[:1]
+    ad_view_aftr_lclnws = advetiment_field.objects.filter(ad_position_id=2).exclude(id=ad_view_top_small).exclude(id=ad_view_aftrmain_small).order_by('-id')[:1]
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')
-    adv_view_banner = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_banner = advetiment_field.objects.filter(ad_position_id=4).order_by('-id')[:1]
     wish_details = special_days.objects.order_by('-id')[:1]
 
 
@@ -40,8 +43,10 @@ def index(request):
         'local_trvpdi_tbl': local_trvpdi_tbl,
         'breaking' : breaking_news,
 
-        'adv_carousel' : adv_view_carousel,
-        'adv_small' : adv_view_small,
+        'adv_top_full' : ad_view_top_full,
+        'adv_top_small': ad_view_top_small,
+        'adv_aftrmain_small' :ad_view_aftrmain_small,
+        'adv_aftr_lclnws' :ad_view_aftr_lclnws,
         'adv_side' : adv_view_side,
         'adv_banner': adv_view_banner,
         'wish' : wish_details,

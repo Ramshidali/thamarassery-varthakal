@@ -135,6 +135,9 @@
   .for-mobile-view{
       display: none;
   }
+  .lcl_table_col{
+       border-right: 1px dotted;
+    }
 /* MOBILE VIEW*/
 
 @media (max-width:900px) {
@@ -236,5 +239,8 @@
     }
     .for-mobile-view{
         display: inline;
+    }
+    .lcl_table_col{
+        border-right: none;
     }
 }
