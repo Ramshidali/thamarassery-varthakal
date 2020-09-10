@@ -181,21 +181,26 @@
                         </div>
                     </div>
 
+                <div ><!--news row-->
                     {% for n in news %}
-
-{#                    <div class="row row_for_news"><!--news row-->#}
-                        <div class="col-md-12" style="padding: 0px 0px 0px 15px;">
-                        <a href="/news_view/{{ n.pk }}/">
-                            <div class="row row_for_news" style="padding: 0px"><!--news row-->
-                                <div class="chip">
-                                    <img src="{{ n.news_image.url }}" alt="Person" width="96" height="96">
-                                    {{ n.news_title|truncatechars:70 }}
-                                </div>
-                            </div>
-                        </a>
+                        <div class="col-md-12" style="padding: 0px 0px 5px 15px;" id="glf_div">
+                            <span>
+                                <a href="/news_view/{{ n.pk }}/">
+                                    <div class="row row_for_news">
+                                        <div class="col-sm-4 n_img_div">
+                                            <img src="{{ n.news_image.url }}" alt="Person" width="80%" height="70">
+                                        </div>
+                                        <div class="col-sm-8 title_header">
+                                            {{ n.news_title|truncatechars:70 }}
+                                        </div>
+                                    </div>
+                                </a>
+                            </span>
                         </div>
                         <hr>
+
                     {% endfor %}
+                </div>
 
 
                     <div class="row row_for_adveticement"><!--adveticement row-->
@@ -208,16 +213,6 @@
                     </div><!--adveticement row end-->
                     <hr class="all_hr">
 
-{#                    <hr class="all_hr">#}
-{#                    <div class="row row_for_adveticement"><!--adveticement row-->#}
-{#                        <div class="col-sm-12">#}
-{#                            <img src={% static "images/niyamasbabha_samelanam.jpg" %} alt="" width="100%">#}
-{#                        </div>#}
-{#                        <div class="col-sm-12 news_head">#}
-{#                            <div style="width: 100%;">കീം ​പ​രീ​ക്ഷ എ​ഴു​തി​യ ഒ​രു വി​ദ്യാ​ർ​ഥി​ക്ക് </div>#}
-{#                        </div>#}
-{#                    </div><!--adveticement row end-->#}
-{#                    <hr class="all_hr">#}
 
                 </div>
             </div>

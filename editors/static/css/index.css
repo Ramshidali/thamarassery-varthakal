@@ -15,16 +15,20 @@
     height: 200px;
     padding: 5px 0px 5px 0px;
 }
-.chip {
-    display: inline-block;
-    padding: 0 25px;
+.title_head {
+    display: inline;
+    margin: 0px;
+    padding: 0px 0px 0px 25px;
     height: 90px;
     font-family: MLTTKarthikaUni;
     font-size: 15px;
     color: #006caa;
     font-weight: bold;
     line-height: 18px;
-    text-align: left;
+}
+.n_img_div{
+    padding: 0px;
+    margin: 0px;
 }
 
 .chip img {
@@ -242,5 +246,15 @@
     }
     .lcl_table_col{
         border-right: none;
+    }
+    .n_img_div{
+        width: 30%;
+        display: inline;
+        float: left;
+    }
+    .title_head {
+        width: 70%;
+        display: inline;
+        float: right;
     }
 }

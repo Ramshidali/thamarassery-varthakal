@@ -202,13 +202,18 @@
 
                     {% for gulf in gulf_news %}
                         <div class="col-md-12" style="padding: 10px 30px 0px 30px;">
+
                             <a href="/news_view/{{ gulf.pk }}/">
-                                <div class="row row_for_news" style="padding: 5px"><!--news row-->
-                                    <div class="chip">
-                                        <img src="{{ gulf.news_image.url }}" alt="Person" width="96" height="96">{{ gulf.news_title|truncatechars:70 }}
+                                <div class="row row_for_news">
+                                    <div class="col-sm-4 n_img_div">
+                                        <img src="{{ gulf.news_image.url }}" alt="Person" width="100%" height="70">
+                                    </div>
+                                    <div class="col-sm-8 title_head">
+                                        {{ gulf.news_title|truncatechars:70 }}
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+
                         </div>
                         <hr>
                         {% endfor %}
