@@ -26,7 +26,6 @@ def signup(request):
     email_regex = '[a-z0-9._%+-]{3,}@[a-z]{3,}([.]{1}[a-z]{2,}|[.]{1}[a-z]{2,}[.]{1}[a-z]{2,})'
     email = request.POST['email']
     if (re.search(email_regex, email)) is None:
-        print("invalid")
         messages.success(request, 'Invalid Email Pattern...!\nexample@mail.com')
         return render(request, 'registration.html')
 
@@ -68,23 +67,16 @@ def signin(request):
 
 
     user = authenticate(request, username=username, password=passwrd)
-    print(user)
     if user is None:
         if user.is_active:
             login(request, user)
         else:
-            print("not user")
             messages.success(request, 'You are not in Records Please Register First...!')
             return render(request, 'registration.html')
     else:
         user_type = registration.objects.get(id=user)
-        print(user_type)
-        print("editor")
         if (user_type.user_type == "editor"):
             request.session['id'] = user.pk
-
-            print(request.session['id'])
-            print("hai")
             user = User.objects.get(pk=request.session['id'])
 
             n_district = news_district.objects.all()
@@ -104,8 +96,6 @@ def signin(request):
         elif (user_type.user_type == "admin"):
             request.session['id'] = user.pk
 
-            print(request.session['id'])
-            print("hai")
             user = User.objects.get(pk=request.session['id'])
 
             n_district = news_district.objects.all()
@@ -122,7 +112,6 @@ def signin(request):
             }
             return render(request, 'admin_page.html', news)
         else:
-            print("pending")
             if (user_type.user_type == "pending"):
                 messages.success(request, 'Your Membership is not Accepted Contact Your Admin...!')
                 return redirect('/writer/')
@@ -151,43 +140,33 @@ def edit_corner(request):
 
 def post_news(request):
     editor = User.objects.get(pk=request.session['id'])
-    print(editor.pk)
 
     if editor is None:
         messages.success(request, 'Login Timeout, Please Login...')
         return render(request, 'login.html')
     else:
         x = datetime.datetime.now()
-        print(x)
         headding = request.POST['n_head']
-        print(headding)
         content = request.POST['n_content']
-        print(content)
         region = request.POST['region']
-        print(region)
 
         if (region == '1'):
             district = request.POST['district']
         else:
             district = request.POST['d_district']
-        print(district)
 
         if (district == '11'):
             place = request.POST['place']
         else:
             place = request.POST['d_place']
-        print(place)
 
         image = request.FILES['image']
         fs = FileSystemStorage()
         fs.save(image.name, image)
-        print(image)
 
         main_news = request.POST['main_news']
-        print(main_news)
 
         breaking_news = request.POST['breaking_news']
-        print(breaking_news)
 
         news = news_field(editor_id_id=editor.pk, published_date=x, news_title=headding, news_content=content,
                           news_nation_id=region,
@@ -323,9 +302,7 @@ def pending_members(request):
             'reg': reg,
             'usertype': user_type,
         }
-        print(users)
-        print(reg)
-        print(p_members)
+
         return render(request, 'pending editors.html', p_members)
 
 #
