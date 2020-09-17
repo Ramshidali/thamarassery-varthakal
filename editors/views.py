@@ -248,7 +248,7 @@ def my_record(request):
         day = datetime.date.today().weekday()
         days = ['തിങ്കള്‍', 'ചൊവ്വ', 'ബുധന്‍', 'വ്യാഴം', 'വെള്ളി', 'ശനി', 'ഞായര്‍']
         user = User.objects.get(pk=request.session['id'])
-        data = news_field.objects.filter(editor_id=user.pk).order_by('-id')
+        data = news_field.objects.filter(editor_id=user.pk).order_by('-id')[:10]
         nation = news_nation.objects.all()
         record = {
             'records': data,

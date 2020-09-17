@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49ea9d50-18ce-4ba7-aa42-1479080387f2" name="Default" comment="19-8-2020">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/views.py" afterPath="$PROJECT_DIR$/editors/views.py" />
-    </list>
+    <list default="true" id="49ea9d50-18ce-4ba7-aa42-1479080387f2" name="Default" comment="19-8-2020" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +27,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/editors/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="256" column="29" lean-forward="false" selection-start-line="256" selection-start-column="29" selection-end-line="256" selection-end-column="29" />
+            <state relative-caret-position="748">
+              <caret line="349" column="25" lean-forward="false" selection-start-line="349" selection-start-column="25" selection-end-line="349" selection-end-column="25" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
                 <element signature="e#472#514#0" expanded="false" />
@@ -44,7 +41,38 @@
                 <element signature="e#6526#7136#0" expanded="false" />
                 <element signature="e#7169#7481#0" expanded="false" />
                 <element signature="e#7510#7944#0" expanded="false" />
+                <element signature="e#7974#8800#0" expanded="false" />
+                <element signature="e#8832#9374#0" expanded="false" />
+                <element signature="e#9411#9549#0" expanded="false" />
+                <element signature="e#9585#10151#0" expanded="false" />
+                <element signature="e#10151#10152#0" expanded="false" />
+                <element signature="e#11032#11469#0" expanded="false" />
+                <element signature="e#11501#11857#0" expanded="false" />
+                <element signature="e#11892#11992#0" expanded="false" />
+                <element signature="e#12022#12398#0" expanded="false" />
+                <element signature="e#12433#12911#0" expanded="false" />
+                <element signature="e#12955#13059#0" expanded="false" />
+                <element signature="e#13097#13473#0" expanded="false" />
+                <element signature="e#13506#13791#0" expanded="false" />
+                <element signature="e#13826#14375#0" expanded="false" />
+                <element signature="e#14413#14729#0" expanded="false" />
+                <element signature="e#14773#14887#0" expanded="false" />
+                <element signature="e#14920#15273#0" expanded="false" />
+                <element signature="e#15307#15607#0" expanded="false" />
+                <element signature="e#15639#15943#0" expanded="false" />
+                <element signature="e#15975#16279#0" expanded="false" />
+                <element signature="e#16311#16358#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my_records.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editors/templates/my_records.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1190">
+              <caret line="70" column="53" lean-forward="false" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,7 +146,6 @@
         <option value="$PROJECT_DIR$/editors/static/js/rightclick.js" />
         <option value="$PROJECT_DIR$/editors/models.py" />
         <option value="$PROJECT_DIR$/editors/urls.py" />
-        <option value="$PROJECT_DIR$/editors/templates/my_records.html" />
         <option value="$PROJECT_DIR$/editors/templates/ad_view.html" />
         <option value="$PROJECT_DIR$/editors/templates/admin_page.html" />
         <option value="$PROJECT_DIR$/editors/templates/advetisement.html" />
@@ -138,6 +165,7 @@
         <option value="$PROJECT_DIR$/viewers/templates/index.html" />
         <option value="$PROJECT_DIR$/tsynews/settings.py" />
         <option value="$PROJECT_DIR$/editors/views.py" />
+        <option value="$PROJECT_DIR$/editors/templates/my_records.html" />
       </list>
     </option>
   </component>
@@ -190,7 +218,39 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tsynews">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tsynews">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="editors">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tsynews">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="editors">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="templates">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -631,7 +691,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="1" width="1378" height="733" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25948405" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -641,7 +700,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23333333" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23166667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23166667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -888,6 +947,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="25" column="75" lean-forward="false" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#28#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -973,17 +1035,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/my_records.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-716">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tsynews/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1064,18 +1122,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/my_records.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="53" lean-forward="false" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="-1294">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/editors/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="256" column="29" lean-forward="false" selection-start-line="256" selection-start-column="29" selection-end-line="256" selection-end-column="29" />
+        <state relative-caret-position="748">
+          <caret line="349" column="25" lean-forward="false" selection-start-line="349" selection-start-column="25" selection-end-line="349" selection-end-column="25" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
             <element signature="e#472#514#0" expanded="false" />
@@ -1088,6 +1154,27 @@
             <element signature="e#6526#7136#0" expanded="false" />
             <element signature="e#7169#7481#0" expanded="false" />
             <element signature="e#7510#7944#0" expanded="false" />
+            <element signature="e#7974#8800#0" expanded="false" />
+            <element signature="e#8832#9374#0" expanded="false" />
+            <element signature="e#9411#9549#0" expanded="false" />
+            <element signature="e#9585#10151#0" expanded="false" />
+            <element signature="e#10151#10152#0" expanded="false" />
+            <element signature="e#11032#11469#0" expanded="false" />
+            <element signature="e#11501#11857#0" expanded="false" />
+            <element signature="e#11892#11992#0" expanded="false" />
+            <element signature="e#12022#12398#0" expanded="false" />
+            <element signature="e#12433#12911#0" expanded="false" />
+            <element signature="e#12955#13059#0" expanded="false" />
+            <element signature="e#13097#13473#0" expanded="false" />
+            <element signature="e#13506#13791#0" expanded="false" />
+            <element signature="e#13826#14375#0" expanded="false" />
+            <element signature="e#14413#14729#0" expanded="false" />
+            <element signature="e#14773#14887#0" expanded="false" />
+            <element signature="e#14920#15273#0" expanded="false" />
+            <element signature="e#15307#15607#0" expanded="false" />
+            <element signature="e#15639#15943#0" expanded="false" />
+            <element signature="e#15975#16279#0" expanded="false" />
+            <element signature="e#16311#16358#0" expanded="false" />
           </folding>
         </state>
       </provider>
