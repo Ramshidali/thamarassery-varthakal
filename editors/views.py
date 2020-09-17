@@ -248,15 +248,13 @@ def my_record(request):
         day = datetime.date.today().weekday()
         days = ['തിങ്കള്‍', 'ചൊവ്വ', 'ബുധന്‍', 'വ്യാഴം', 'വെള്ളി', 'ശനി', 'ഞായര്‍']
         user = User.objects.get(pk=request.session['id'])
-        data = news_field.objects.filter(editor_id=user.pk).order_by('-published_date')
+        data = news_field.objects.filter(editor_id=user.pk).order_by('-id')
         nation = news_nation.objects.all()
-        whatsapp = w_link.objects.order_by('-id')[:1]
         record = {
             'records': data,
             'nation': nation,
             'date': date,
             'day': days[day],
-            'w_link': whatsapp,
             'usertype': user_type,
         }
 
