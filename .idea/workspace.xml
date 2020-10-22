@@ -1,160 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49ea9d50-18ce-4ba7-aa42-1479080387f2" name="Default" comment="19-8-2020">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_00hPTOZ.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_2OHoQSx.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_3ObfZFO.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_5qf5hsg.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_8Mk5OaI.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_9hjpUPK.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_GCCvRdo.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_KSjGh9h.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_MLQfnD5.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_OYkpH3b.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_TGTnSJB.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_WlbRevC.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_a7UhJga.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_abJfbfn.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_cD1tpeT.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_ci7exFj.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_d8XodbT.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_dX7ylBC.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_e0fQp2n.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_haZ4puy.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_hsv7Nkp.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_kw5RtxZ.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_lSRFfN1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_prjV5R0.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_qJNybg2.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_qYQzd1K.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/20942F01-F4A0-43F1-8154-A344EFAF2769_arvNMEm_zY8vRqZ.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_2uLTEM4.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_4qj5GAS.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_5JlT0RT.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_GAb3BZn.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_MEBPVfb.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_TMiHQKB.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_UJHaHW3.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_Uefu7zv.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_W6FRocu.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_XENAmNz.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_Yjw4FWN.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_aA2XXjd.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_dEk2JhU.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_eLqFzhP.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_iOA3AeF.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_mYJLSLA.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_nliXuxy.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_uLAuBn6.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_vjrEyhJ.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_x9iaGvN.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/2A474D95-6926-44FE-9392-BF6433416AD6_Uym5Jpe_z8cCXyL.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200714-WA0060_hDeSYHt.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200714-WA0060_hDeSYHt_1GOIg7e.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200714-WA0060_hDeSYHt_5fT8fvg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200714-WA0060_hDeSYHt_DtWt45r.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200714-WA0060_hDeSYHt_OB9AYZc.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200714-WA0060_hDeSYHt_RDX7Ycj.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200714-WA0060_hDeSYHt_RN6ZRxk.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200714-WA0060_hDeSYHt_aMmoXA9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200714-WA0060_hDeSYHt_eOUiBT5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200714-WA0060_hDeSYHt_o6jmvBu.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200714-WA0060_hDeSYHt_qH2GuSS.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200714-WA0060_hDeSYHt_yLhUIev.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200917-WA0069_TcUQ3On.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200917-WA0069_TcUQ3On_1E1QOSn.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200917-WA0069_TcUQ3On_1XlwK4i.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200917-WA0069_TcUQ3On_51PZ0Zz.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200917-WA0069_TcUQ3On_82ceXt2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200917-WA0069_TcUQ3On_mx1qwIn.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200917-WA0069_TcUQ3On_n5ES0jH.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG-20200917-WA0069_TcUQ3On_sfd4YeC.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG_0018.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/IMG_0018_1q8MkOV.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_1ur36Hs.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_2lPez1v.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_3KcC8FY.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_3luhlAX.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_4JH8e1n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_4NhtvVt.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_6Q55mIf.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_7UaMXD7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_8lwybX1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_9yckCcF.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_Ap47E0q.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_BJlRphB.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_Bu8QeLU.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_Ca7qfff.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_Ee3HioC.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_Eth7D9n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_EuUbhdD.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_FCLR9ap.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_G78dVJR.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_GUy4g6L.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_HZtwYff.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_I24wM8E.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_IBPLvsQ.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_IPI0oEN.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_IQsMiL6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_Kgw0H6F.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_KndZODW.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_MEXcxCC.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_MUziR6L.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_MyuzBq0.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_O4p44Wd.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_OYVzDUp.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_OqARoil.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_OushHh5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_PHFsXF7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_RHYUiAu.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_U5LDuaG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_V25gTUu.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_VAGgjWY.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_WFmWDqB.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_WiIwtNb.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_XB0QtvN.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_XGvAlaP.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_XMuvm0S.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_Y7TB9Qi.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_bXxwcWQ.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_da58sGR.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_fZuSTnd.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_g0UQ9Y2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_i43emgT.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_i9SNrxo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_iNDL7ty.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_j3xDTFV.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_lPGqoct.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_mClEOke.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_mKXDEUI.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_nV2s3T3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_oJjtAd4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_oX9TloG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_oc3fBxM.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_pv8NGej.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_qpWQMzG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_r7cf62a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_sCW1Fhb.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_sHrAIk3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_sheATQB.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_smPumEx.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_tXsRx6l.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_uVQuWQ2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_vR1jz11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/kiifb_vhEvkf2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/tsytemp.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysqlclient-1.4.6-cp37-cp37m-win32.whl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/editors/migrations/0002_auto_20201005_2259.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/editors/migrations/0003_auto_20201005_2302.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/editors/migrations/0004_auto_20201011_1605.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/editors/static/js/ytlinkidgenerate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newdatabase.sql" />
+    <list default="true" id="49ea9d50-18ce-4ba7-aa42-1479080387f2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/newdb.sql" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsynews/settings.py" afterPath="$PROJECT_DIR$/tsynews/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -212,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/editors/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="531">
@@ -220,6 +70,16 @@
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="87" column="1" lean-forward="false" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -269,7 +129,6 @@
         <option value="$PROJECT_DIR$/editors/static/js/enable_or_desable.js" />
         <option value="$PROJECT_DIR$/editors/static/js/ytlinkidgenerate.js" />
         <option value="$PROJECT_DIR$/editors/templates/admin_page.html" />
-        <option value="$PROJECT_DIR$/tsynews/settings.py" />
         <option value="$PROJECT_DIR$/editors/templates/advetisement.html" />
         <option value="$PROJECT_DIR$/editors/static/css/basic_css.css" />
         <option value="$PROJECT_DIR$/editors/static/css/mobile_view.css" />
@@ -286,6 +145,7 @@
         <option value="$PROJECT_DIR$/editors/models.py" />
         <option value="$PROJECT_DIR$/editors/views.py" />
         <option value="$PROJECT_DIR$/editors/urls.py" />
+        <option value="$PROJECT_DIR$/tsynews/settings.py" />
       </list>
     </option>
   </component>
@@ -333,6 +193,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Thamarassery-Varthakal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Thamarassery-Varthakal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Thamarassery-Varthakal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tsynews" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -744,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603356233488</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="youtube vdo">
+      <created>1603356749558</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1603356749558</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -758,8 +639,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22768533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22768533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -844,7 +726,8 @@
     <MESSAGE value="delete all" />
     <MESSAGE value="all changes" />
     <MESSAGE value="19-8-2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="19-8-2020" />
+    <MESSAGE value="youtube vdo" />
+    <option name="LAST_COMMIT_MESSAGE" value="youtube vdo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="42" key="#Inspections" timestamp="1601831818440">
@@ -1055,13 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="96" column="6" lean-forward="false" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tsynews/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1187,6 +1063,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1225,6 +1102,14 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="87" column="1" lean-forward="false" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
