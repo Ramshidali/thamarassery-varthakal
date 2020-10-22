@@ -1,82 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49ea9d50-18ce-4ba7-aa42-1479080387f2" name="Default" comment="19-8-2020">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/tsynews.iml" afterPath="$PROJECT_DIR$/.idea/tsynews.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="49ea9d50-18ce-4ba7-aa42-1479080387f2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/admin.py" afterPath="$PROJECT_DIR$/editors/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/apps.py" afterPath="$PROJECT_DIR$/editors/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/editors/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/models.py" afterPath="$PROJECT_DIR$/editors/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/about.css" afterPath="$PROJECT_DIR$/editors/static/css/about.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/basic_css.css" afterPath="$PROJECT_DIR$/editors/static/css/basic_css.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/editors/static/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/braking news.css" afterPath="$PROJECT_DIR$/editors/static/css/braking news.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/demo.css" afterPath="$PROJECT_DIR$/editors/static/css/demo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/edit_about.css" afterPath="$PROJECT_DIR$/editors/static/css/edit_about.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/editors/static/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/index.css" afterPath="$PROJECT_DIR$/editors/static/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/login.css" afterPath="$PROJECT_DIR$/editors/static/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/mobile_view.css" afterPath="$PROJECT_DIR$/editors/static/css/mobile_view.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/nav_and_footer.css" afterPath="$PROJECT_DIR$/editors/static/css/nav_and_footer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/navbar_a.css" afterPath="$PROJECT_DIR$/editors/static/css/navbar_a.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/news_viw.css" afterPath="$PROJECT_DIR$/editors/static/css/news_viw.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/theme1.css" afterPath="$PROJECT_DIR$/editors/static/css/theme1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/all.js" afterPath="$PROJECT_DIR$/editors/static/js/all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/editors/static/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/caleandar.js" afterPath="$PROJECT_DIR$/editors/static/js/caleandar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/caleandar.min.js" afterPath="$PROJECT_DIR$/editors/static/js/caleandar.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/copy_text.js" afterPath="$PROJECT_DIR$/editors/static/js/copy_text.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/cut-and-past.js" afterPath="$PROJECT_DIR$/editors/static/js/cut-and-past.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/date.js" afterPath="$PROJECT_DIR$/editors/static/js/date.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/days.js" afterPath="$PROJECT_DIR$/editors/static/js/days.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/demo.js" afterPath="$PROJECT_DIR$/editors/static/js/demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/enable_or_desable.js" afterPath="$PROJECT_DIR$/editors/static/js/enable_or_desable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/image_validation.js" afterPath="$PROJECT_DIR$/editors/static/js/image_validation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/jquery-1.11.1.min.js" afterPath="$PROJECT_DIR$/editors/static/js/jquery-1.11.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/jquery.min.js" afterPath="$PROJECT_DIR$/editors/static/js/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/password_show_toggle.js" afterPath="$PROJECT_DIR$/editors/static/js/password_show_toggle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/password_validation.js" afterPath="$PROJECT_DIR$/editors/static/js/password_validation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/rightclick.js" afterPath="$PROJECT_DIR$/editors/static/js/rightclick.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/side_nav.js" afterPath="$PROJECT_DIR$/editors/static/js/side_nav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/top_time.js" afterPath="$PROJECT_DIR$/editors/static/js/top_time.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/Edit_About.html" afterPath="$PROJECT_DIR$/editors/templates/Edit_About.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/ad_view.html" afterPath="$PROJECT_DIR$/editors/templates/ad_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/admin_page.html" afterPath="$PROJECT_DIR$/editors/templates/admin_page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/advetisement.html" afterPath="$PROJECT_DIR$/editors/templates/advetisement.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/all_members.html" afterPath="$PROJECT_DIR$/editors/templates/all_members.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/login.html" afterPath="$PROJECT_DIR$/editors/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/my_records.html" afterPath="$PROJECT_DIR$/editors/templates/my_records.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/pending editors.html" afterPath="$PROJECT_DIR$/editors/templates/pending editors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/registration.html" afterPath="$PROJECT_DIR$/editors/templates/registration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/special_wishes.html" afterPath="$PROJECT_DIR$/editors/templates/special_wishes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/view-profile.html" afterPath="$PROJECT_DIR$/editors/templates/view-profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/whatsapp.html" afterPath="$PROJECT_DIR$/editors/templates/whatsapp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/tests.py" afterPath="$PROJECT_DIR$/editors/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/urls.py" afterPath="$PROJECT_DIR$/editors/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/views.py" afterPath="$PROJECT_DIR$/editors/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsynews/.gitignore" afterPath="$PROJECT_DIR$/tsynews/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsynews/settings.py" afterPath="$PROJECT_DIR$/tsynews/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsynews/urls.py" afterPath="$PROJECT_DIR$/tsynews/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsynews/wsgi.py" afterPath="$PROJECT_DIR$/tsynews/wsgi.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/admin.py" afterPath="$PROJECT_DIR$/viewers/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/apps.py" afterPath="$PROJECT_DIR$/viewers/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/models.py" afterPath="$PROJECT_DIR$/viewers/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/templates/about.html" afterPath="$PROJECT_DIR$/viewers/templates/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/templates/index.html" afterPath="$PROJECT_DIR$/viewers/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/templates/local_news.html" afterPath="$PROJECT_DIR$/viewers/templates/local_news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/templates/news_types.html" afterPath="$PROJECT_DIR$/viewers/templates/news_types.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/templates/news_view.html" afterPath="$PROJECT_DIR$/viewers/templates/news_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/tests.py" afterPath="$PROJECT_DIR$/viewers/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/urls.py" afterPath="$PROJECT_DIR$/viewers/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/views.py" afterPath="$PROJECT_DIR$/viewers/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -652,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597868018980</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="19-8-2020">
+      <created>1603355900629</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1603355900629</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -667,12 +600,12 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22768533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22768533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26022914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26022914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4942717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
