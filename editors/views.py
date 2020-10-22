@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.core.files.storage import FileSystemStorage
 from . models import registration,news_field,advetiment_field,adv_position,news_place,\
-    news_nation,news_district,w_link,aboutus_content,aboutus,special_days
+    news_nation,news_district,aboutus_content,aboutus,special_days
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,logout
 from django.contrib import messages
@@ -68,11 +68,8 @@ def signin(request):
 
     user = authenticate(request, username=username, password=passwrd)
     if user is None:
-        if user.is_active:
-            login(request, user)
-        else:
-            messages.success(request, 'You are not in Records Please Register First...!')
-            return render(request, 'registration.html')
+        messages.success(request, 'You are not in Records Please Register First...!')
+        return render(request, 'registration.html')
     else:
         user_type = registration.objects.get(id=user)
         if (user_type.user_type == "editor"):
@@ -149,6 +146,7 @@ def post_news(request):
         headding = request.POST['n_head']
         content = request.POST['n_content']
         region = request.POST['region']
+        y_link = request.POST['y_link_radio']
 
         if (region == '1'):
             district = request.POST['district']
@@ -160,9 +158,17 @@ def post_news(request):
         else:
             place = request.POST['d_place']
 
-        image = request.FILES['image']
-        fs = FileSystemStorage()
-        fs.save(image.name, image)
+        if (y_link == 'No'):
+            image = request.FILES['image']
+            fs = FileSystemStorage()
+            fs.save(image.name, image)
+
+            video ='NULL'
+        else:
+            image = 'NULL'
+            video = request.POST['y_id']
+
+
 
         main_news = request.POST['main_news']
 
@@ -170,25 +176,26 @@ def post_news(request):
 
         news = news_field(editor_id_id=editor.pk, published_date=x, news_title=headding, news_content=content,
                           news_nation_id=region,
-                          news_district_id=district, news_place_id=place, news_image=image, main_news=main_news,
+                          news_district_id=district, news_place_id=place, news_image=image,video_link=video, main_news=main_news,
                           breaking_news=breaking_news)
         news.save()
         return redirect('/writer/edit_corner/')
 
 def adv_page(request):
-    user = User.objects.get(pk=request.session['id'])
-    user_type = registration.objects.get(id=user)
-    ad_position = adv_position.objects.all()
+        user = User.objects.get(pk=request.session['id'])
+        user_type = registration.objects.get(id=user)
+        ad_position = adv_position.objects.all()
 
-    if user is None:
-        messages.success(request, 'Login Timeout, Please Login...')
-        return render(request, 'login.html')
-    else:
-        u_type = {
-            'usertype' : user_type,
-            'ad_position' : ad_position,
-        }
-        return render(request,'advetisement.html',u_type)
+        if user is None:
+            messages.success(request, 'Login Timeout, Please Login...')
+            return render(request, 'login.html')
+        else:
+            u_type = {
+                'usertype': user_type,
+                'ad_position': ad_position,
+            }
+            return render(request, 'advetisement.html', u_type)
+
 
 def ad_post(request):
     user = User.objects.get(pk=request.session['id'])
@@ -303,65 +310,6 @@ def pending_members(request):
 
         return render(request, 'pending editors.html', p_members)
 
-#
-# def view_profile(request):
-#     user = User.objects.get(pk=request.session['id'])
-#     reg = registration.objects.get(pk=request.session['id'])
-#
-#     view = {
-#         'name' : user,
-#         'contact' : reg,
-#     }
-#     return render(request,'view-profile.html',view)
-
-
-# def update_profile(request):
-#     ids = User.objects.get(pk=request.session['id'])
-#     # first_name = request.POST['f_name']
-#     # last_name = request.POST['l_name']
-#     # phone = request.POST['phoney']
-#     # email = request.POST['emaily']
-#
-#     image = request.FILES['image']
-#     fs = FileSystemStorage()
-#     fs.save(image.name, image)
-#     #
-#     # user = User.objects.create_user(id=ids, username=email, first_nam)
-#     registration.objects.filter(pk=request.session['id']).update(image=image)
-#
-#
-#
-#     return redirect('/writer/view_profile/')
-
-def whatsapp(request):
-    user = User.objects.get(pk=request.session['id'])
-    user_type = registration.objects.get(id=user)
-    if user is None:
-        messages.success(request, 'Login Timeout, Please Login...')
-        return render(request, 'login.html')
-    else:
-        w_details = w_link.objects.all()
-        details = {
-            'usertype': user_type,
-            'w_link' : w_details
-        }
-        return render(request,'whatsapp.html',details)
-
-def upload_link(request):
-    user = User.objects.get(pk=request.session['id'])
-    if user is None:
-        messages.success(request, 'Login Timeout, Please Login...')
-        return render(request, 'login.html')
-    else:
-        link = request.POST['link']
-        upload =  w_link(editor_id=user,whatsapp=link)
-        upload.save()
-        return redirect('/writer/whatsapp_link/')
-
-def delete_link(request,id):
-    d_link = w_link.objects.get(pk=id)
-    d_link.delete()
-    return redirect('/writer/whatsapp_link/')
 
 def editabout(request):
     user = User.objects.get(pk=request.session['id'])

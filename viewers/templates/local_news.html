@@ -67,12 +67,15 @@
                                         <li data-target="#myCarousel" data-slide-to="2"></li>
                                     </ol><!-- Wrapper for slides -->
                                     <div class="carousel-inner ">
-                                        <div class="item active" style="height: 100px">
-                                            <img id="carousel_img" src='{% static "images/tsy_2.png" %}' >
+                                        {% for ad in adv_small_active %}
+                                        <div class="item active" style="height: 65px;width: 100%">
+                                            <img id="carousel_img" src="{{ ad.adv_images.url }}" style="height:100%; width: 100%">
                                         </div>
-                                        {% for ad in adv_carousel %}
-                                            <div class="item" style="height: 100px">
-                                                <img id="carousel_img" src="{{ ad.adv_images.url }}">
+                                    {% endfor %}
+
+                                        {% for ad in adv_small %}
+                                            <div class="item" style="height: 65px;width: 100%">
+                                                <img id="carousel_img" src="{{ ad.adv_images.url }}" style="height:100%; width: 100%">
                                             </div>
                                         {% endfor %}<!-- Left and right controls -->
                                         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -104,9 +107,11 @@
                                     </ol>
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner ">
+                                        {% for ad in adv_small_active %}
                                         <div class="item active" style="height: 65px;width: 100%">
-                                            <img id="scnd_carousel_img" src='{% static "images/raaz.jpg" %}'  style="height:100%; width: 100%"ss>
+                                            <img id="carousel_img" src="{{ ad.adv_images.url }}" style="height:100%; width: 100%">
                                         </div>
+                                    {% endfor %}
 
                                         {% for ad in adv_small %}
                                             <div class="item" style="height: 65px;width: 100%">
@@ -179,14 +184,19 @@
                             <div class="col-sm-5" style="margin: 0px; padding: 0px;">
                                 <div class="news_image top_nws_image" style="margin: 15px 0px 0px 0px; padding: 0px;">
                                     <a href="/news_view/{{ tsy.pk }}/">
-                                        <img src="{{ tsy.news_image.url }}" alt="" width="100%">
+                                        {% if tsy.news_image == "NULL" %}
+                                        <img src='http://i4.ytimg.com/vi/{{ tsy.video_link }}/maxresdefault.jpg' alt="" width="100%" height="160px">
+{#                                          <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                                        {% else %}
+                                        <img src="{{ tsy.news_image.url }}" alt="" width="100%" height="160px">
+                                        {% endif %}
                                     </a>
                                 </div>
                             </div>
                             <div class="col-sm-7 top_nws_content_top_main_col" style="margin: 0px; padding: 0px;">
                                 <div class="news_content top_nws_content" style="margin: 15px 0px 0px 15px; padding: 0px;">
                                     <a href="/news_view/{{ tsy.pk }}/" >
-                                        {{ tsy.news_content }}
+                                        {{ tsy.news_content|truncatechars:210 }}
                                     </a>
                                 </div>
                             </div>
@@ -208,14 +218,19 @@
                             <div class="col-sm-5" style="margin: 0px; padding: 0px;">
                                 <div class="news_image top_nws_image" style="margin: 15px 0px 0px 0px; padding: 0px;">
                                     <a href="/news_view/{{ tsy.pk }}/">
-                                        <img src="{{ tsy.news_image.url }}" alt="" width="100%">
+                                        {% if tsy.news_image == "NULL" %}
+                                        <img src='http://i4.ytimg.com/vi/{{ tsy.video_link }}/maxresdefault.jpg' alt="" width="100%" height="160px">
+{#                                          <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                                        {% else %}
+                                        <img src="{{ tsy.news_image.url }}" alt="" width="100%" height="160px">
+                                        {% endif %}
                                     </a>
                                 </div>
                             </div>
                             <div class="col-sm-7 top_nws_content_top_main_col" style="margin: 0px; padding: 0px;">
                                 <div class="news_content top_nws_content" style="margin: 15px 0px 0px 15px; padding: 0px;">
                                     <a href="/news_view/{{ tsy.pk }}/" >
-                                        {{ tsy.news_content }}
+                                        {{ tsy.news_content|truncatechars:210  }}
                                     </a>
                                 </div>
                             </div>
@@ -249,7 +264,12 @@
                         {% for kdly in m_kdly_news %}
                         <div class="col-sm-12 news_image" style="margin: 0px; padding: 0px;">
                             <a href="/news_view/{{ kdly.pk }}/">
-                            <img src="{{ kdly.news_image.url }}" alt="" width="100%" >
+                                {% if n.news_image == "NULL" %}
+                                <img src='http://i4.ytimg.com/vi/{{ n.video_link }}/maxresdefault.jpg' alt="" width="100%" height="220px">
+{#                                     <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                                {% else %}
+                                <img src="{{ kdly.news_image.url }}" alt="" width="100%" height="220px">
+                                {% endif %}
                             </a>
                         </div>
                         <div class="col-sm-12 news_head" style="margin: 15px 0px 0px 0px; padding: 0px;">
@@ -282,7 +302,12 @@
                         {% for b in m_blsry_news %}
                         <div class="col-sm-12 news_image" style="margin: 0px; padding: 0px;">
                             <a href="/news_view/{{ b.pk }}/">
-                            <img src="{{ b.news_image.url }}" alt="" width="100%" >
+                                {% if b.news_image == "NULL" %}
+                                <img src='http://i4.ytimg.com/vi/{{ b.video_link }}/maxresdefault.jpg' alt="" width="100%" height="220px">
+{#                              <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                                {% else %}
+                                <img src="{{ b.news_image.url }}" alt="" width="100%" height="220px">
+                                {% endif %}
                             </a>
                         </div>
                         <div class="col-sm-12 news_head" style="margin: 15px 0px 0px 0px; padding: 0px;">
@@ -322,7 +347,12 @@
                     {% for mm in m_mukkam_news %}
                     <div class="col-sm-12 news_image" style="margin: 0px; padding: 0px;">
                         <a href="/news_view/{{ mm.pk }}/">
-                        <img src="{{ mm.news_image.url }}" alt="" width="100%" >
+                            {% if mm.news_image == "NULL" %}
+                                <img src='http://i4.ytimg.com/vi/{{ mm.video_link }}/maxresdefault.jpg' alt="" width="100%" height="220px">
+{#                                     <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                            {% else %}
+                            <img src="{{ mm.news_image.url }}" alt="" width="100%" height="220px">
+                            {% endif %}
                         </a>
                     </div>
                     <div class="col-sm-12 news_head" style="margin: 15px 0px 0px 0px; padding: 0px;">
@@ -354,7 +384,12 @@
                     {% for trvmpdy in m_trvmpdy_news %}
                     <div class="col-sm-12 news_image" style="margin: 0px; padding: 0px;">
                         <a href="/news_view//{{ trvmpdy.pk }}">
-                        <img src="{{ trvmpdy.news_image.url }}" alt="" width="100%" >
+                            {% if trvmpdy.news_image == "NULL" %}
+                            <img src='http://i4.ytimg.com/vi/{{ trvmpdy.video_link }}/maxresdefault.jpg' alt="" width="100%" height="220px">
+{#                                     <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                            {% else %}
+                            <img src="{{ trvmpdy.news_image.url }}" alt="" width="100%" height="220px">
+                            {% endif %}
                         </a>
                     </div>
                     <div class="col-sm-12 news_head" style="margin: 15px 0px 0px 0px; padding: 0px;">
@@ -393,7 +428,12 @@
                     {% for pm in m_puthuppady_news %}
                     <div class="col-sm-12 news_image" style="margin: 0px; padding: 0px;">
                         <a href="/news_view/{{ pm.pk }}/">
-                        <img src="{{ pm.news_image.url }}" alt="" width="100%" >
+                            {% if pm.news_image == "NULL" %}
+                                <img src='http://i4.ytimg.com/vi/{{ pm.video_link }}/maxresdefault.jpg' alt="" width="100%" height="220px">
+{#                                     <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                                {% else %}
+                            <img src="{{ pm.news_image.url }}" alt="" width="100%" height="220px">
+                            {% endif %}
                         </a>
                     </div>
                     <div class="col-sm-12 news_head" style="margin: 15px 0px 0px 0px; padding: 0px;">
@@ -426,7 +466,12 @@
                     {% for km in m_kattippara_news %}
                     <div class="col-sm-12 news_image" style="margin: 0px; padding: 0px;">
                         <a href="/news_view/{{ km.pk }}/">
-                        <img src="{{ km.news_image.url }}" alt="" width="100%" >
+                            {% if km.news_image == "NULL" %}
+                                <img src='http://i4.ytimg.com/vi/{{ km.video_link }}/maxresdefault.jpg' alt="" width="100%" height="220px">
+{#                                     <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                                {% else %}
+                                <img src="{{ km.news_image.url }}" alt="" width="100%" height="220px">
+                            {% endif %}
                         </a>
                     </div>
                     <div class="col-sm-12 news_head" style="margin: 15px 0px 0px 0px; padding: 0px;">

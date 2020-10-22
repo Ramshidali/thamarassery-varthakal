@@ -1,7 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49ea9d50-18ce-4ba7-aa42-1479080387f2" name="Default" comment="19-8-2020" />
+    <list default="true" id="49ea9d50-18ce-4ba7-aa42-1479080387f2" name="Default" comment="19-8-2020">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/tsynews.iml" afterPath="$PROJECT_DIR$/.idea/tsynews.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/admin.py" afterPath="$PROJECT_DIR$/editors/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/apps.py" afterPath="$PROJECT_DIR$/editors/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/editors/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/models.py" afterPath="$PROJECT_DIR$/editors/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/about.css" afterPath="$PROJECT_DIR$/editors/static/css/about.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/basic_css.css" afterPath="$PROJECT_DIR$/editors/static/css/basic_css.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/editors/static/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/braking news.css" afterPath="$PROJECT_DIR$/editors/static/css/braking news.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/demo.css" afterPath="$PROJECT_DIR$/editors/static/css/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/edit_about.css" afterPath="$PROJECT_DIR$/editors/static/css/edit_about.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/editors/static/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/index.css" afterPath="$PROJECT_DIR$/editors/static/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/login.css" afterPath="$PROJECT_DIR$/editors/static/css/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/mobile_view.css" afterPath="$PROJECT_DIR$/editors/static/css/mobile_view.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/nav_and_footer.css" afterPath="$PROJECT_DIR$/editors/static/css/nav_and_footer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/navbar_a.css" afterPath="$PROJECT_DIR$/editors/static/css/navbar_a.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/news_viw.css" afterPath="$PROJECT_DIR$/editors/static/css/news_viw.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/css/theme1.css" afterPath="$PROJECT_DIR$/editors/static/css/theme1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/all.js" afterPath="$PROJECT_DIR$/editors/static/js/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/editors/static/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/caleandar.js" afterPath="$PROJECT_DIR$/editors/static/js/caleandar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/caleandar.min.js" afterPath="$PROJECT_DIR$/editors/static/js/caleandar.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/copy_text.js" afterPath="$PROJECT_DIR$/editors/static/js/copy_text.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/cut-and-past.js" afterPath="$PROJECT_DIR$/editors/static/js/cut-and-past.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/date.js" afterPath="$PROJECT_DIR$/editors/static/js/date.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/days.js" afterPath="$PROJECT_DIR$/editors/static/js/days.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/demo.js" afterPath="$PROJECT_DIR$/editors/static/js/demo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/enable_or_desable.js" afterPath="$PROJECT_DIR$/editors/static/js/enable_or_desable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/image_validation.js" afterPath="$PROJECT_DIR$/editors/static/js/image_validation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/jquery-1.11.1.min.js" afterPath="$PROJECT_DIR$/editors/static/js/jquery-1.11.1.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/jquery.min.js" afterPath="$PROJECT_DIR$/editors/static/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/password_show_toggle.js" afterPath="$PROJECT_DIR$/editors/static/js/password_show_toggle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/password_validation.js" afterPath="$PROJECT_DIR$/editors/static/js/password_validation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/rightclick.js" afterPath="$PROJECT_DIR$/editors/static/js/rightclick.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/side_nav.js" afterPath="$PROJECT_DIR$/editors/static/js/side_nav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/static/js/top_time.js" afterPath="$PROJECT_DIR$/editors/static/js/top_time.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/Edit_About.html" afterPath="$PROJECT_DIR$/editors/templates/Edit_About.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/ad_view.html" afterPath="$PROJECT_DIR$/editors/templates/ad_view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/admin_page.html" afterPath="$PROJECT_DIR$/editors/templates/admin_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/advetisement.html" afterPath="$PROJECT_DIR$/editors/templates/advetisement.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/all_members.html" afterPath="$PROJECT_DIR$/editors/templates/all_members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/login.html" afterPath="$PROJECT_DIR$/editors/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/my_records.html" afterPath="$PROJECT_DIR$/editors/templates/my_records.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/pending editors.html" afterPath="$PROJECT_DIR$/editors/templates/pending editors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/registration.html" afterPath="$PROJECT_DIR$/editors/templates/registration.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/special_wishes.html" afterPath="$PROJECT_DIR$/editors/templates/special_wishes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/view-profile.html" afterPath="$PROJECT_DIR$/editors/templates/view-profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/templates/whatsapp.html" afterPath="$PROJECT_DIR$/editors/templates/whatsapp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/tests.py" afterPath="$PROJECT_DIR$/editors/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/urls.py" afterPath="$PROJECT_DIR$/editors/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editors/views.py" afterPath="$PROJECT_DIR$/editors/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsynews/.gitignore" afterPath="$PROJECT_DIR$/tsynews/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsynews/settings.py" afterPath="$PROJECT_DIR$/tsynews/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsynews/urls.py" afterPath="$PROJECT_DIR$/tsynews/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsynews/wsgi.py" afterPath="$PROJECT_DIR$/tsynews/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/admin.py" afterPath="$PROJECT_DIR$/viewers/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/apps.py" afterPath="$PROJECT_DIR$/viewers/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/models.py" afterPath="$PROJECT_DIR$/viewers/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/templates/about.html" afterPath="$PROJECT_DIR$/viewers/templates/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/templates/index.html" afterPath="$PROJECT_DIR$/viewers/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/templates/local_news.html" afterPath="$PROJECT_DIR$/viewers/templates/local_news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/templates/news_types.html" afterPath="$PROJECT_DIR$/viewers/templates/news_types.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/templates/news_view.html" afterPath="$PROJECT_DIR$/viewers/templates/news_view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/tests.py" afterPath="$PROJECT_DIR$/viewers/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/urls.py" afterPath="$PROJECT_DIR$/viewers/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewers/views.py" afterPath="$PROJECT_DIR$/viewers/views.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,56 +99,49 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/editors/views.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/viewers/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="349" column="25" lean-forward="false" selection-start-line="349" selection-start-column="25" selection-end-line="349" selection-end-column="25" />
+            <state relative-caret-position="34">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/viewers/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7072">
+              <caret line="419" column="36" lean-forward="false" selection-start-line="419" selection-start-column="36" selection-end-line="419" selection-end-column="36" />
               <folding>
-                <element signature="e#0#45#0" expanded="true" />
-                <element signature="e#472#514#0" expanded="false" />
-                <element signature="e#541#2012#0" expanded="false" />
-                <element signature="e#2038#2073#0" expanded="false" />
-                <element signature="e#2100#4083#0" expanded="false" />
-                <element signature="e#4115#4746#0" expanded="false" />
-                <element signature="e#4776#6016#0" expanded="false" />
-                <element signature="e#6045#6498#0" expanded="false" />
-                <element signature="e#6526#7136#0" expanded="false" />
-                <element signature="e#7169#7481#0" expanded="false" />
-                <element signature="e#7510#7944#0" expanded="false" />
-                <element signature="e#7974#8800#0" expanded="false" />
-                <element signature="e#8832#9374#0" expanded="false" />
-                <element signature="e#9411#9549#0" expanded="false" />
-                <element signature="e#9585#10151#0" expanded="false" />
-                <element signature="e#10151#10152#0" expanded="false" />
-                <element signature="e#11032#11469#0" expanded="false" />
-                <element signature="e#11501#11857#0" expanded="false" />
-                <element signature="e#11892#11992#0" expanded="false" />
-                <element signature="e#12022#12398#0" expanded="false" />
-                <element signature="e#12433#12911#0" expanded="false" />
-                <element signature="e#12955#13059#0" expanded="false" />
-                <element signature="e#13097#13473#0" expanded="false" />
-                <element signature="e#13506#13791#0" expanded="false" />
-                <element signature="e#13826#14375#0" expanded="false" />
-                <element signature="e#14413#14729#0" expanded="false" />
-                <element signature="e#14773#14887#0" expanded="false" />
-                <element signature="e#14920#15273#0" expanded="false" />
-                <element signature="e#15307#15607#0" expanded="false" />
-                <element signature="e#15639#15943#0" expanded="false" />
-                <element signature="e#15975#16279#0" expanded="false" />
-                <element signature="e#16311#16358#0" expanded="false" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_records.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/editors/templates/my_records.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editors/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="70" column="53" lean-forward="false" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/editors/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="531">
+              <caret line="33" column="62" lean-forward="false" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,9 +152,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -118,56 +187,34 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tsynews/urls.py" />
-        <option value="$PROJECT_DIR$/editors/static/js/main_news_validation.js" />
-        <option value="$PROJECT_DIR$/viewers/static/css/basic_css.css" />
-        <option value="$PROJECT_DIR$/viewers/static/js/days.js" />
-        <option value="$PROJECT_DIR$/viewers/static/js/top_time.js" />
-        <option value="$PROJECT_DIR$/editors/static/js/side_nav.js" />
-        <option value="$PROJECT_DIR$/editors/static/js/copy_text.js" />
-        <option value="$PROJECT_DIR$/viewers/static/css/box.css" />
-        <option value="$PROJECT_DIR$/viewers/static/css/nav_and_footer.css" />
-        <option value="$PROJECT_DIR$/viewers/static/css/mobile_view.css" />
-        <option value="$PROJECT_DIR$/viewers/static/css/about.css" />
-        <option value="$PROJECT_DIR$/viewers/static/js/date.js" />
-        <option value="$PROJECT_DIR$/editors/static/js/date.js" />
-        <option value="$PROJECT_DIR$/viewers/static/css/braking news.css" />
-        <option value="$PROJECT_DIR$/viewers/static/css/index.css" />
-        <option value="$PROJECT_DIR$/editors/static/css/login.css" />
-        <option value="$PROJECT_DIR$/editors/static/css/edit_about.css" />
-        <option value="$PROJECT_DIR$/editors/templates/login.html" />
-        <option value="$PROJECT_DIR$/editors/templates/registration.html" />
-        <option value="$PROJECT_DIR$/editors/static/css/braking news.css" />
-        <option value="$PROJECT_DIR$/viewers/urls.py" />
-        <option value="$PROJECT_DIR$/editors/static/css/nav_and_footer.css" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/editors/static/js/enable_or_desable.js" />
-        <option value="$PROJECT_DIR$/editors/static/css/basic_css.css" />
-        <option value="$PROJECT_DIR$/editors/static/js/cut-and-past.js" />
-        <option value="$PROJECT_DIR$/editors/static/js/rightclick.js" />
-        <option value="$PROJECT_DIR$/editors/models.py" />
-        <option value="$PROJECT_DIR$/editors/urls.py" />
-        <option value="$PROJECT_DIR$/editors/templates/ad_view.html" />
+        <option value="$PROJECT_DIR$/editors/static/js/ytlinkidgenerate.js" />
         <option value="$PROJECT_DIR$/editors/templates/admin_page.html" />
-        <option value="$PROJECT_DIR$/editors/templates/advetisement.html" />
-        <option value="$PROJECT_DIR$/editors/templates/all_members.html" />
-        <option value="$PROJECT_DIR$/editors/templates/Edit_About.html" />
-        <option value="$PROJECT_DIR$/editors/templates/pending editors.html" />
-        <option value="$PROJECT_DIR$/editors/templates/view-profile.html" />
-        <option value="$PROJECT_DIR$/editors/templates/whatsapp.html" />
-        <option value="$PROJECT_DIR$/editors/templates/special_wishes.html" />
-        <option value="$PROJECT_DIR$/viewers/templates/news_view.html" />
-        <option value="$PROJECT_DIR$/viewers/templates/about.html" />
-        <option value="$PROJECT_DIR$/viewers/templates/local_news.html" />
-        <option value="$PROJECT_DIR$/viewers/views.py" />
-        <option value="$PROJECT_DIR$/editors/static/css/index.css" />
-        <option value="$PROJECT_DIR$/editors/static/css/mobile_view.css" />
-        <option value="$PROJECT_DIR$/viewers/templates/news_types.html" />
-        <option value="$PROJECT_DIR$/viewers/templates/index.html" />
         <option value="$PROJECT_DIR$/tsynews/settings.py" />
+        <option value="$PROJECT_DIR$/editors/templates/advetisement.html" />
+        <option value="$PROJECT_DIR$/editors/static/css/basic_css.css" />
+        <option value="$PROJECT_DIR$/editors/static/css/mobile_view.css" />
+        <option value="$PROJECT_DIR$/editors/static/css/index.css" />
+        <option value="$PROJECT_DIR$/viewers/templates/index.html" />
+        <option value="$PROJECT_DIR$/editors/static/css/nav_and_footer.css" />
+        <option value="$PROJECT_DIR$/editors/static/js/slider.js" />
+        <option value="$PROJECT_DIR$/editors/static/css/slider.css" />
+        <option value="$PROJECT_DIR$/viewers/templates/news_types.html" />
+        <option value="$PROJECT_DIR$/viewers/templates/local_news.html" />
+        <option value="$PROJECT_DIR$/viewers/templates/news_view.html" />
+        <option value="$PROJECT_DIR$/viewers/views.py" />
+        <option value="$PROJECT_DIR$/viewers/templates/about.html" />
+        <option value="$PROJECT_DIR$/editors/models.py" />
         <option value="$PROJECT_DIR$/editors/views.py" />
-        <option value="$PROJECT_DIR$/editors/templates/my_records.html" />
+        <option value="$PROJECT_DIR$/editors/urls.py" />
       </list>
     </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="tsynews/invalid/Django" />
+    </ignored-facets>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -176,14 +223,15 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-6" />
-    <option name="y" value="1" />
-    <option name="width" value="1378" />
-    <option name="height" value="733" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
+  <component name="ProjectId" id="1iPghiHpJMlG4LtmDmuu8gMY5Yv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -197,107 +245,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tsynews">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tsynews">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tsynews">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tsynews">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="editors">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tsynews">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="editors">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="templates">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tsynews" />
+              <option name="myItemId" value="Thamarassery-Varthakal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tsynews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsynews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsynews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="viewers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsynews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tsynews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="viewers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="Thamarassery-Varthakal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -306,28 +263,33 @@
       <pane id="Scratches" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="H:/my project works/MAXLORE works/django/django_sampleproject" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="H:\tsynews\editors\static\js" />
-      <recent name="H:\tsynews\editors\static\images" />
-      <recent name="H:\tsynews\editors\static\css" />
-      <recent name="H:\tsynews\viewers\static\image" />
-      <recent name="H:\tsynews\media" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="H:\tsynews\media" />
       <recent name="H:\tsynews\editors\static\js" />
       <recent name="H:\tsynews\editors\static" />
       <recent name="H:\tsynews\editors\templates" />
       <recent name="H:\tsynews\viewers\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\Thamarassery-Varthakal\media" />
+      <recent name="H:\tsynews\editors\static\js" />
+      <recent name="H:\tsynews\editors\static\images" />
+      <recent name="H:\tsynews\editors\static\css" />
+      <recent name="H:\tsynews\viewers\static\image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -545,6 +507,10 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\RA\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="49ea9d50-18ce-4ba7-aa42-1479080387f2" name="Default" comment="" />
@@ -689,51 +655,58 @@
     <option name="localTasksCounter" value="20" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="1" width="1378" height="733" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25948405" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19967267" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23333333" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23166667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22768533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26022914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4942717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19967267" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2026578" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21699545" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26022914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4942717" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21860817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -761,14 +734,6 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
             </State>
           </value>
         </entry>
@@ -789,80 +754,254 @@
     <MESSAGE value="19-8-2020" />
     <option name="LAST_COMMIT_MESSAGE" value="19-8-2020" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="309" y="42" key="#Inspections" timestamp="1601831818440">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="309" y="42" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1601831818440" />
+    <state x="421" y="187" key="#Notifications" timestamp="1601839478591">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="421" y="187" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1601839478591" />
+    <state x="137" y="13" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601832827085">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="13" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1601832827085" />
+    <state x="194" y="64" width="977" height="600" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog" timestamp="1601816506279">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="194" y="64" width="977" height="600" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog/0.0.1366.728@0.0.1366.728" timestamp="1601816506279" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1601831759208">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601831759208" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/editors/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="543" column="18" lean-forward="true" selection-start-line="543" selection-start-column="18" selection-end-line="543" selection-end-column="18" />
+        <state relative-caret-position="2482">
+          <caret line="146" column="9" lean-forward="false" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/raaz_cxAHORi.jpg" />
-    <entry file="file://$PROJECT_DIR$/media/raaz.jpg" />
-    <entry file="file://$PROJECT_DIR$/media/malayalam.samayam.com.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/viewers/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1428">
+          <caret line="84" column="28" lean-forward="false" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/viewers/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="2686">
+          <caret line="158" column="49" lean-forward="false" selection-start-line="158" selection-start-column="49" selection-end-line="158" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editors/static/css/about.css">
+    <entry file="file://$PROJECT_DIR$/editors/templates/admin_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-779">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="1632">
+          <caret line="96" column="126" lean-forward="false" selection-start-line="96" selection-start-column="126" selection-end-line="96" selection-end-column="126" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/login.html">
+    <entry file="file://$PROJECT_DIR$/editors/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="67" />
+        <state relative-caret-position="2482">
+          <caret line="146" column="9" lean-forward="false" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/urls.py">
+    <entry file="file://$PROJECT_DIR$/viewers/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="153">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="84" column="28" lean-forward="false" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewers/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2686">
+          <caret line="158" column="49" lean-forward="false" selection-start-line="158" selection-start-column="49" selection-end-line="158" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/admin_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="96" column="126" lean-forward="false" selection-start-line="96" selection-start-column="126" selection-end-line="96" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2482">
+          <caret line="146" column="9" lean-forward="true" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewers/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="84" column="28" lean-forward="false" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewers/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2686">
+          <caret line="158" column="49" lean-forward="false" selection-start-line="158" selection-start-column="49" selection-end-line="158" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/admin_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="96" column="126" lean-forward="false" selection-start-line="96" selection-start-column="126" selection-end-line="96" selection-end-column="126" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/editors/static/js/enable_or_desable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        <state relative-caret-position="867">
+          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editors/static/css/theme1.css">
+    <entry file="file://$PROJECT_DIR$/editors/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="2839">
+          <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/admin_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/admin_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsynews/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/static/js/image_validation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/static/js/enable_or_desable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/tsytemp.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/static/js/ytlinkidgenerate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/my_records.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="96" column="6" lean-forward="false" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsynews/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="59" column="7" lean-forward="false" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/ad_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/admin_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="58" lean-forward="false" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/templates/advetisement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="54" column="57" lean-forward="true" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -873,308 +1012,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editors/static/css/navbar_a.css">
+    <entry file="file://$PROJECT_DIR$/editors/static/css/mobile_view.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/static/css/nav_and_footer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/static/css/braking news.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/static/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/static/css/edit_about.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/static/js/cut-and-past.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/static/js/rightclick.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="25" column="75" lean-forward="false" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="67" column="12" lean-forward="false" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/ad_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="85" lean-forward="true" selection-start-line="21" selection-start-column="85" selection-end-line="21" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/admin_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="25" column="89" lean-forward="true" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/advetisement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/all_members.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/Edit_About.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="89" lean-forward="true" selection-start-line="22" selection-start-column="89" selection-end-line="22" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/pending editors.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/registration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/view-profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/whatsapp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="89" lean-forward="true" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/icon1.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/special_wishes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="4" lean-forward="false" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsynews/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="95" lean-forward="false" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/templates/news_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="83" lean-forward="false" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/templates/local_news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="95" lean-forward="false" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/static/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/static/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="257" column="21" lean-forward="false" selection-start-line="257" selection-start-column="21" selection-end-line="257" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/static/js/copy_text.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-221">
+          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/viewers/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7531">
-          <caret line="443" column="7" lean-forward="false" selection-start-line="443" selection-start-column="7" selection-end-line="443" selection-end-column="7" />
+        <state relative-caret-position="495">
+          <caret line="298" column="96" lean-forward="false" selection-start-line="298" selection-start-column="96" selection-end-line="298" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1002">
+          <caret line="209" column="34" lean-forward="false" selection-start-line="209" selection-start-column="34" selection-end-line="209" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/editors/static/css/basic_css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/static/js/slider.js" />
+    <entry file="file://$PROJECT_DIR$/editors/static/css/slider.css" />
+    <entry file="file://$PROJECT_DIR$/editors/static/css/nav_and_footer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewers/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-748">
+          <caret line="118" column="52" lean-forward="false" selection-start-line="118" selection-start-column="52" selection-end-line="118" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewers/templates/news_types.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="111" column="36" lean-forward="false" selection-start-line="111" selection-start-column="36" selection-end-line="121" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewers/templates/local_news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="119" column="52" lean-forward="true" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewers/templates/news_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="84" column="52" lean-forward="false" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1089">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editors/static/css/mobile_view.css">
+    <entry file="file://$PROJECT_DIR$/editors/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewers/templates/news_types.html">
+    <entry file="file://$PROJECT_DIR$/viewers/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="199" column="28" lean-forward="false" selection-start-line="199" selection-start-column="28" selection-end-line="199" selection-end-column="28" />
+        <state relative-caret-position="34">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/viewers/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4990">
-          <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editors/templates/my_records.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="53" lean-forward="false" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsynews/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1294">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="7072">
+          <caret line="419" column="36" lean-forward="false" selection-start-line="419" selection-start-column="36" selection-end-line="419" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/editors/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="349" column="25" lean-forward="false" selection-start-line="349" selection-start-column="25" selection-end-line="349" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#472#514#0" expanded="false" />
-            <element signature="e#541#2012#0" expanded="false" />
-            <element signature="e#2038#2073#0" expanded="false" />
-            <element signature="e#2100#4083#0" expanded="false" />
-            <element signature="e#4115#4746#0" expanded="false" />
-            <element signature="e#4776#6016#0" expanded="false" />
-            <element signature="e#6045#6498#0" expanded="false" />
-            <element signature="e#6526#7136#0" expanded="false" />
-            <element signature="e#7169#7481#0" expanded="false" />
-            <element signature="e#7510#7944#0" expanded="false" />
-            <element signature="e#7974#8800#0" expanded="false" />
-            <element signature="e#8832#9374#0" expanded="false" />
-            <element signature="e#9411#9549#0" expanded="false" />
-            <element signature="e#9585#10151#0" expanded="false" />
-            <element signature="e#10151#10152#0" expanded="false" />
-            <element signature="e#11032#11469#0" expanded="false" />
-            <element signature="e#11501#11857#0" expanded="false" />
-            <element signature="e#11892#11992#0" expanded="false" />
-            <element signature="e#12022#12398#0" expanded="false" />
-            <element signature="e#12433#12911#0" expanded="false" />
-            <element signature="e#12955#13059#0" expanded="false" />
-            <element signature="e#13097#13473#0" expanded="false" />
-            <element signature="e#13506#13791#0" expanded="false" />
-            <element signature="e#13826#14375#0" expanded="false" />
-            <element signature="e#14413#14729#0" expanded="false" />
-            <element signature="e#14773#14887#0" expanded="false" />
-            <element signature="e#14920#15273#0" expanded="false" />
-            <element signature="e#15307#15607#0" expanded="false" />
-            <element signature="e#15639#15943#0" expanded="false" />
-            <element signature="e#15975#16279#0" expanded="false" />
-            <element signature="e#16311#16358#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editors/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="33" column="62" lean-forward="false" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

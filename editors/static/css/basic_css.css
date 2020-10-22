@@ -17,7 +17,7 @@ hr{
     display: inline;
     list-style-type: square;
     padding: 0px 0px 0px 20px;
-    font-family: MLTTKarthikaUni;
+    font-family: NotoSansMalayalam-Regular;;
     font-size: 18px;
     font-style: normal;
     line-height: 15pt;
@@ -40,16 +40,16 @@ a:hover{
 }
 
 .news_head{
-    font-family: MLTTKarthikaUni;
-    font-size: 20px;
+    font-family:NotoSansMalayalam-Regular;;
+    font-size: 15px;
     color:#000000;
     font-weight: 600;
     line-height: 22px;
     text-align: left;
 }
 .news_content{
-    font-family: MLTTKarthikaUni;
-    font-size: 18px;
+    font-family: NotoSansMalayalam-Regular;;
+    font-size: 15px;
     color:#000000;
     line-height: 22px;
     text-align: left;
@@ -64,8 +64,8 @@ a:hover{
 .main_news_head{
     padding: 0;
     margin: 0;
-    font-family: MLTTKarthikaUni;
-    font-size: 15px;
+    font-family: NotoSansMalayalam-Regular;;
+    font-size: 12px;
     color:#006caa;
     font-weight: bold;
     line-height: 22px;

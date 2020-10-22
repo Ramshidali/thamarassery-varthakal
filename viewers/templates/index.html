@@ -133,7 +133,7 @@
 
                      <marquee class="scroll-text breaking-news-news">
                          {% for b_news in breaking %}
-                             <span class="fa fa-globe" style="color: red"> &nbsp;  </span><a href="#">&nbsp;{{ b_news.news_title }}&nbsp;</a>
+                             <span class="fa fa-globe" style="color: red"> &nbsp;  </span><a href="#">&nbsp;{{ b_news.news_title|linebreaks }}&nbsp;</a>
                          {% endfor %}
                      </marquee>
 
@@ -156,10 +156,15 @@
                     <div class="col-md-12 main_news_update">
                         <a href="/news_view/{{ main_news_a.pk }}/">
                             <div class="col-md-12 mainnews_img_div">
-                                <img src='{{ main_news_a.news_image.url }}' alt="" class="main_news_image">
+                                {% if main_news_a.news_image == "NULL" %}
+{#                                    <iframe src='{{ main_news_a.video_link }}?controls=0' frameborder="0" allowfullscreen class="main_news_image"></iframe>#}
+                                    <img src='http://i4.ytimg.com/vi/{{ main_news_a.video_link }}/maxresdefault.jpg' alt="" class="main_news_image">
+                                {% else %}
+                                    <img src='{{ main_news_a.news_image.url }}' alt="" class="main_news_image">
+                                {% endif %}
                             </div>
                             <div class="col-md-12 main_news_head">
-                                <div style="width: 100%;">{{ main_news_a.news_title }} </div>
+                                <div style="width: 100%;">{{ main_news_a.news_title|linebreaks }} </div>
                             </div>
                         </a>
                         <hr style="border: 1px dotted">
@@ -172,10 +177,15 @@
                         <div class="col-md-6 main_news_update_sm6">
                             <a href="/news_view/{{ more_main.pk }}/">
                                 <div class="col-md-12 mainnews_img_div_sm6">
+                                    {% if more_main.news_image == "NULL" %}
+{#                                    <iframe src='{{ more_main.video_link }}?controls=0' frameborder="0" allowfullscreen class="main_news_image_b"></iframe>#}
+                                    <img src='http://i4.ytimg.com/vi/{{ more_main.video_link }}/maxresdefault.jpg' alt="" class="main_news_image">
+                                {% else %}
                                     <img src='{{ more_main.news_image.url }}' alt="" class="main_news_image_b">
+                                {% endif %}
                                 </div>
                                 <div class="col-md-12 main_news_head">
-                                    <div style="width: 100%;">{{ more_main.news_title }}</div>
+                                    <div style="width: 100%;">{{ more_main.news_title|linebreaks }}</div>
                                 </div>
                             </a>
                         </div>
@@ -185,10 +195,10 @@
 
 
 
-                    <div class="col-sm-12 adv_area_2">
+                    <div class="col-sm-12 adv_area_2" style="margin: 10px;padding: 10px;">
                         <div>
-                            {% for ad in adv_aftrmain_small %}
-                                <img src="{{ ad.adv_images.url }}" width="100%" height="100px">
+                            {% for ad in adv_aftrmain %}
+                                <img src="{{ ad.adv_images.url }}" style="max-width: 100%;margin-top: 15px;">
                             {% endfor %}
                         </div>
                     </div>
@@ -206,10 +216,15 @@
                             <a href="/news_view/{{ gulf.pk }}/">
                                 <div class="row row_for_news">
                                     <div class="col-sm-4 n_img_div">
-                                        <img src="{{ gulf.news_image.url }}" alt="Person" width="100%" height="70">
+                                        {% if gulf.news_image == "NULL" %}
+                                            <img src='http://i4.ytimg.com/vi/{{ gulf.video_link }}/maxresdefault.jpg' alt="" width="100%" height="70">
+{#                                           <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                                        {% else %}
+                                            <img src='{{ gulf.news_image.url }}' alt="" width="100%" height="70">
+                                        {% endif %}
                                     </div>
                                     <div class="col-sm-8 title_head">
-                                        {{ gulf.news_title|truncatechars:70 }}
+                                        {{ gulf.news_title|truncatechars:70|linebreaks }}
                                     </div>
                                 </div>
                             </a>
@@ -218,54 +233,81 @@
                         <hr>
                         {% endfor %}
                     </div><!--news gulf end-->
+                <div class="col-sm-12 adv_area_2">
+                        <div>
+                            {% for ad in adv_aftrglf%}
+                                <img src="{{ ad.adv_images.url }}" style="max-width: 100%;margin-top: 15px;"><br><br>
+                            {% endfor %}
+                        </div>
+                    </div>
                 </div><!--main news area finished-->
 
-            <div class="col-sm-12 adv_area_2 for-mobile-view">
 
 
-            </div>
 
 
-            <div class="col-sm-5 local_news_table_col"><!--local news table-->
+            <div class="col-sm-4 local_news_table_col"><!--local news table-->
                 <div class="col-md-12 heading_news_types heading_news_types_lnm">
                     <span>LATEST NEWS</span>
                     <hr class="main_news_hr">
                 </div>
+                {% for latest in latest_news %}
+                <div class="col-md-12" style="padding: 10px 30px 0px 30px;">
+                            <a href="/news_view/{{ latest.pk }}/">
+                                <div class="row row_for_news">
+                                    <div class="col-sm-4 n_img_div">
+                                        {% if latest.news_image == "NULL" %}
+                                            <img src='http://i4.ytimg.com/vi/{{ latest.video_link }}/maxresdefault.jpg' alt="" width="100%" height="70">
+{#                                           <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                                        {% else %}
+                                            <img src='{{ latest.news_image.url }}' alt="" width="100%" height="70">
+                                        {% endif %}
+                                    </div>
+                                    <div class="col-sm-8 title_head">
+                                        {{ latest.news_title|truncatechars:70|linebreaks }}
+                                    </div>
+                                </div>
+                            </a>
 
-                <div class="col-sm-12 lcl_table_col"  >
+                        </div>
+                {% endfor %}
 
-                    <table id="local_news_table">
-                        <tbody>
-                        {% for latest in latest_news %}
-                            <tr>
-                                <td><li class="main_news_head_mob_li"><a href="/news_view/{{ latest.pk }}/" class="main_news_head main_news_head_mob">{{ latest.news_title }}</a></li></td>
-                            </tr>
-                        {% endfor %}
-
-                        </tbody>
-                    </table>
-                </div>
+{#                <div class="col-sm-12 lcl_table_col"  >#}
+{##}
+{#                    <table id="local_news_table">#}
+{#                        <tbody>#}
+{#                        {% for latest in latest_news %}#}
+{#                            <tr>#}
+{#                                <td><li class="main_news_head_mob_li"><a href="/news_view/{{ latest.pk }}/" class="main_news_head main_news_head_mob">{{ latest.news_title }}</a></li></td>#}
+{#                            </tr>#}
+{#                        {% endfor %}#}
+{##}
+{#                        </tbody>#}
+{#                    </table>#}
+{#                </div>#}
             </div><!--local news table end-->
 
-            <div class="col-sm-12 adv_area_2 for-mobile-view">
-                       {% for ad in adv_aftr_lclnws %}
-                           <img src="{{ ad.adv_images.url }}" width="100%" height="100px">
-                       {% endfor %}
-                    </div>
+{#            <div class="col-sm-12 adv_area_2 for-mobile-view">#}
+{#                       {% for ad in adv_aftr_lclnws %}#}
+{#                           <img src="{{ ad.adv_images.url }}" width="100%" height="100px">#}
+{#                       {% endfor %}#}
+{#                    </div>#}
 
-            <div class="col-sm-2 add_area" style="margin: 0;padding: 0"  ><!--local news table-->
-                    {% for ad in adv_side %}
-                        <div class="col-sm-12">
-                            <img src={{ ad.adv_images.url }} alt="" width="100%">
-                        </div>
-                        {% endfor %}
+            <div class="col-sm-3 add_area" style="margin: 0;padding: 0"  ><!--local news table-->
+                {% for ad in adv_side %}
+                    <div class="col-sm-12" style="padding: 0%;margin: 0%;">
+                        <img src={{ ad.adv_images.url }} alt="" style="max-width: 100%"><br><br>
+                    </div>
+                {% endfor %}
             </div>
         </div><!-- news area end -->
         <hr>
 
         <div class="row bottom_adv_area"><!--bottom adv area-->
-            <div class="col-sm-8" style="padding: 30px 0px 0px 0px;">
-                <img src='{% static "images/raaz.jpg" %}' width="100%">
+            <div class="col-sm-8 adv_b_area" style="padding: 30px 0px 0px 0px;">
+               {% for ad in adv_aftrltst %}
+                   <img src="{{ ad.adv_images.url }}" style="max-width: 100%;margin-top: 15px;"><br><br>
+               {% endfor %}
             </div><!-- carosel row end -->
             <div class="col-sm-4 calender"><!--adv image area-->
                <div class="col-sm-12">
@@ -277,14 +319,14 @@
         </div>
         <hr>
 
-        <div class="row last_adv_banner">
-            {% for ad in adv_banner %}
-            <div class="col-sm-12">
-                <img src='{{ ad.adv_images.url }}' alt="" width="100%" height="100px">
-            </div>
-            {% endfor %}
-        </div>
-        <hr>
+{#        <div class="row last_adv_banner">#}
+{#            {% for ad in adv_banner %}#}
+{#            <div class="col-sm-12">#}
+{#                <img src='{{ ad.adv_images.url }}' alt="" width="100%" height="100px">#}
+{#            </div>#}
+{#            {% endfor %}#}
+{#        </div>#}
+{#        <hr>#}
     </div><!--bottom carousel area end-->
 
     <div class="row kerala_news_row">
@@ -301,27 +343,59 @@
                     </div>
                     <div class="col-sm-12 news_image" style="margin: 0px; padding: 0px;">
                         <a href="/news_view/{{ local_tsy_main.pk }}/">
-                        <img src="{{ local_tsy_main.news_image.url }}" alt="" width="100%" class="local_news_image" >
+                            {% if local_tsy_main.news_image == "NULL" %}
+                                <img src='http://i4.ytimg.com/vi/{{ local_tsy_main.video_link }}/maxresdefault.jpg' alt="" width="100%" class="local_news_image">
+{#                              <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                            {% else %}
+                                <img src="{{ local_tsy_main.news_image.url }}" alt="" width="100%" class="local_news_image" >
+                            {% endif %}
                         </a>
                     </div>
                     <div class="col-sm-12 news_head" style="margin: 15px 0px 0px 0px; padding: 0px;">
                         <a href="/news_view/{{ local_tsy_main.pk }}/">
-                        {{ local_tsy_main.news_title }}
+                        {{ local_tsy_main.news_title|linebreaks }}
                         </a>
                     </div>
-                    <div class="col-sm-12" style="margin: 0px; padding: 0px;">
-                        <div class="table_col" style="margin: 0px; padding: 0px;">
-                            <table id="local_news_table">
-                                <tbody>
-                                {% for tsy_tbl in local_tsy_tbl %}
-                                    <tr style="padding: 0px; margin: 0px;">
-                                        <td><a href="/news_view/{{ tsy_tbl.pk }}/" class="main_news_head"><li><i  aria-hidden="true"></i>{{ tsy_tbl.news_title }}</li></a></td>
-                                    </tr>
-                                {% endfor %}
-                                </tbody>
-                            </table>
+
+
+                     {% for tsy_tbl in local_tsy_tbl %}
+                <div class="col-md-12" style="padding: 10px 30px 0px 15px;">
+                            <a href="/news_view/{{ tsy_tbl.pk }}/">
+                                <div class="row row_for_news">
+                                    <div class="col-sm-4 n_img_div">
+                                        {% if tsy_tbl.news_image == "NULL" %}
+                                            <img src='http://i4.ytimg.com/vi/{{ tsy_tbl.video_link }}/maxresdefault.jpg' alt="" width="100%" height="70">
+{#                                           <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                                        {% else %}
+                                            <img src='{{ tsy_tbl.news_image.url }}' alt="" width="100%" height="70">
+                                        {% endif %}
+                                    </div>
+                                    <div class="col-sm-8 title_head">
+                                        {{ tsy_tbl.news_title|truncatechars:70|linebreaks }}
+                                    </div>
+                                </div>
+                            </a>
+                </div>
+                {% endfor %}
+{#                    <div class="col-sm-12" style="margin: 0px; padding: 0px;">#}
+{#                        <div class="table_col" style="margin: 0px; padding: 0px;">#}
+{#                            <table id="local_news_table">#}
+{#                                <tbody>#}
+{#                                {% for tsy_tbl in local_tsy_tbl %}#}
+{#                                    <tr style="padding: 0px; margin: 0px;">#}
+{#                                        <td><a href="/news_view/{{ tsy_tbl.pk }}/" class="main_news_head"><li><i  aria-hidden="true"></i>{{ tsy_tbl.news_title }}</li></a></td>#}
+{#                                    </tr>#}
+{#                                {% endfor %}#}
+{#                                </tbody>#}
+{#                            </table>#}
+{#                        </div>#}
+{#                    </div>#}
+                        <div class="col-sm-12 adv_area_2" style="margin: 0px;padding: 0px">
+                            {% for ad in adv_intsyns %}
+                                <img src="{{ ad.adv_images.url }}" style="max-width: 100%;margin: 15px 0px 0px 0px;padding: 0px;"><br><br>
+                            {% endfor %}
                         </div>
-                    </div>
+
                 </div><!--....................................................-->
 
 
@@ -333,27 +407,58 @@
                     </div>
                     <div class="col-sm-12 news_image" style="margin: 0px; padding: 0px;">
                         <a href="/news_view/{{ local_kdly_main.pk }}/">
-                        <img src="{{ local_kdly_main.news_image.url }}" alt="" width="100%" class="local_news_image" >
+                            {% if local_kdly_main.news_image == "NULL" %}
+                                <img src='http://i4.ytimg.com/vi/{{ local_kdly_main.video_link }}/maxresdefault.jpg' alt="" width="100%" class="local_news_image">
+{#                              <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                            {% else %}
+                                <img src="{{ local_kdly_main.news_image.url }}" alt="" width="100%" class="local_news_image" >
+                            {% endif %}
                         </a>
                     </div>
                     <div class="col-sm-12 news_head" style="margin: 15px 0px 0px 0px; padding: 0px;">
                         <a href="/news_view/{{ local_kdly_main.pk }}/">
-                        {{ local_kdly_main.news_title }}
+                        {{ local_kdly_main.news_title|linebreaks }}
                         </a>
                     </div>
-                    <div class="col-sm-12" style="margin: 0px; padding: 0px;">
-                        <div class="table_col" style="margin: 0px; padding: 0px;">
-                            <table id="local_news_table">
-                                <tbody>
-                                {% for kdly_tbl in local_kdly_tbl%}
-                                    <tr style="padding: 0px; margin: 0px;">
-                                        <td><a href="/news_view/{{ kdly_tbl.pk }}/" class="main_news_head"><li><i  aria-hidden="true"></i>{{ kdly_tbl.news_title }}</li></a></td>
-                                    </tr>
-                                {% endfor %}
-                                </tbody>
-                            </table>
+                    {% for kdly_tbl in local_kdly_tbl %}
+                <div class="col-md-12" style="padding: 10px 30px 0px 15px;">
+                            <a href="/news_view/{{ kdly_tbl.pk }}/">
+                                <div class="row row_for_news">
+                                    <div class="col-sm-4 n_img_div">
+                                        {% if kdly_tbl.news_image == "NULL" %}
+                                            <img src='http://i4.ytimg.com/vi/{{ kdly_tbl.video_link }}/maxresdefault.jpg' alt="" width="100%" height="70">
+{#                                           <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                                        {% else %}
+                                            <img src='{{ kdly_tbl.news_image.url }}' alt="" width="100%" height="70">
+                                        {% endif %}
+                                    </div>
+                                    <div class="col-sm-8 title_head">
+                                        {{ kdly_tbl.news_title|truncatechars:70|linebreaks }}
+                                    </div>
+                                </div>
+                            </a>
+
                         </div>
-                    </div>
+                {% endfor %}
+{#                    <div class="col-sm-12" style="margin: 0px; padding: 0px;">#}
+{#                        <div class="table_col" style="margin: 0px; padding: 0px;">#}
+{#                            <table id="local_news_table">#}
+{#                                <tbody>#}
+{#                                {% for kdly_tbl in local_kdly_tbl%}#}
+{#                                    <tr style="padding: 0px; margin: 0px;">#}
+{#                                        <td><a href="/news_view/{{ kdly_tbl.pk }}/" class="main_news_head"><li><i  aria-hidden="true"></i>{{ kdly_tbl.news_title }}</li></a></td>#}
+{#                                    </tr>#}
+{#                                {% endfor %}#}
+{#                                </tbody>#}
+{#                            </table>#}
+{#                        </div>#}
+{#                    </div>#}
+                <div class="col-sm-12 adv_area_2" style="margin: 0px;padding: 0px">
+                    {% for ad in adv_inkdvly %}
+                        <img src="{{ ad.adv_images.url }}" style="max-width: 100%;margin: 15px 0px 0px 0px;padding: 0px;"><br><br>
+                    {% endfor %}
+                </div>
+
                 </div><!--....................................................-->
 
 
@@ -364,27 +469,56 @@
                     </div>
                     <div class="col-sm-12 news_image" style="margin: 0px; padding: 0px;">
                         <a href="/news_view/{{ local_trvpdi_main.pk }}/">
-                        <img src="{{ local_trvpdi_main.news_image.url }}" alt="" width="100%" class="local_news_image" >
+                            {% if local_trvpdi_main.news_image == "NULL" %}
+                                <img src='http://i4.ytimg.com/vi/{{ local_trvpdi_main.video_link }}/maxresdefault.jpg' alt="" width="100%" class="local_news_image">
+{#                              <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                            {% else %}
+                                <img src="{{ local_trvpdi_main.news_image.url }}" alt="" width="100%" class="local_news_image" >
+                            {% endif %}
                         </a>
                     </div>
                     <div class="col-sm-12 news_head" style="margin: 15px 0px 0px 0px; padding: 0px;">
                         <a href="/news_view/{{ local_trvpdi_main.pk }}/">
-                        {{ local_trvpdi_main.news_title }}
+                        {{ local_trvpdi_main.news_title|linebreaks }}
                         </a>
                     </div>
-                    <div class="col-sm-12" style="margin: 0px; padding: 0px;">
-                        <div class="table_col" style="margin: 0px; padding: 0px;">
-                            <table id="local_news_table">
-                                <tbody>
-                                {% for trvpdi_tbl in local_trvpdi_tbl%}
-                                    <tr style="padding: 0px; margin: 0px;">
-                                        <td><a href="/news_view/{{ trvpdi_tbl.pk }}/" class="main_news_head"><li><i  aria-hidden="true"></i>{{ trvpdi_tbl.news_title }}</li></a></td>
-                                    </tr>
-                                {% endfor %}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                     {% for trvpdi_tbl in local_trvpdi_tbl %}
+                         <div class="col-md-12" style="padding: 10px 30px 0px 15px;">
+                            <a href="/news_view/{{ trvpdi_tbl.pk }}/">
+                                <div class="row row_for_news">
+                                    <div class="col-sm-4 n_img_div">
+                                        {% if trvpdi_tbl.news_image == "NULL" %}
+                                            <img src='http://i4.ytimg.com/vi/{{ trvpdi_tbl.video_link }}/maxresdefault.jpg' alt="" width="100%" height="70">
+{#                                           <iframe src='{{ gulf.video_link }}?controls=0' frameborder="0" allowfullscreen width="100%" height="70"></iframe>#}
+                                        {% else %}
+                                            <img src='{{ trvpdi_tbl.news_image.url }}' alt="" width="100%" height="70">
+                                        {% endif %}
+                                    </div>
+                                    <div class="col-sm-8 title_head">
+                                        {{ trvpdi_tbl.news_title|truncatechars:70|linebreaks}}
+                                    </div>
+                                </div>
+                            </a>
+                         </div>
+                     {% endfor %}
+{#                    <div class="col-sm-12" style="margin: 0px; padding: 0px;">#}
+{#                        <div class="table_col" style="margin: 0px; padding: 0px;">#}
+{#                            <table id="local_news_table">#}
+{#                                <tbody>#}
+{#                                {% for trvpdi_tbl in local_trvpdi_tbl%}#}
+{#                                    <tr style="padding: 0px; margin: 0px;">#}
+{#                                        <td><a href="/news_view/{{ trvpdi_tbl.pk }}/" class="main_news_head"><li><i  aria-hidden="true"></i>{{ trvpdi_tbl.news_title }}</li></a></td>#}
+{#                                    </tr>#}
+{#                                {% endfor %}#}
+{#                                </tbody>#}
+{#                            </table>#}
+{#                        </div>#}
+{#                    </div>#}
+                 <div class="col-sm-12 adv_area_2" style="margin: 0px;padding: 0px">
+                    {% for ad in adv_intrvmpdy %}
+                        <img src="{{ ad.adv_images.url }}" style="max-width: 100%;margin: 15px 0px 0px 0px;padding: 0px;"><br><br>
+                    {% endfor %}
+                </div>
                 </div><!--....................................................-->
 
 
@@ -396,9 +530,9 @@
     <hr>
     <div class="container lst_adv_container">
         <div class="row">
-            <div style="text-align: center">
-                {% for ad in adv_top_full %}
-                    <img src="{{ ad.adv_images.url }}" width="100%" height="150px">
+            <div style="text-align: center;margin: 5px 20px 5px 20px;">
+                {% for ad in adv_aftr_lclnws %}
+                    <img src="{{ ad.adv_images.url }}" style="max-width: 100%">
                 {% endfor %}
             </div>
         </div>

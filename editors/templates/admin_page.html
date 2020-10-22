@@ -79,10 +79,25 @@
                             </div>
                             <br>
                         </div>
-                        <div class="image_field">
-                            <input type="file" id="file" name="image" accept="image/*" onchange="return fileValidation()" required style="border: 1px solid; border-radius: 25px; padding: 0; width: 200px;">
+
+                        <div>
+                            <label for="y_link_on_off" style="padding-left: 5px">You Have Any Video Link</label>
+                            <div>
+                                <input onchange="toggle_y_link_y(this.id,'y_link_div');" name="y_link_radio" id="y_Yes" type="radio" value="Yes"  required/>Yes
+                                <input onchange="toggle_y_link_n(this.id,'y_link_div');" name="y_link_radio" id="y_No" type="radio" value="No"  checked required/>No
+                            </div>
                         </div>
-                        <br>
+
+                        <div class="image_field" id="image_field">
+                            <input type="file" id="file" name="image" accept="image/*" onchange="return fileValidation()" style="border: 1px solid; border-radius: 25px; padding: 0; width: 200px;">
+                            <br>
+                        </div>
+
+                        <div id="y_link_div" style="display: none">
+                            <input type="url" class="y_link" id="y_link" placeholder="Past Link Here!" style="width: 200px" ><br><br>
+                            <input type="hidden" name="y_id" id="y_id">
+                        </div>
+
                         <div>
                             <span style="display: none"> <input type="checkbox" name="main_news" id="main_news" value="1" checked></span>
                             <input type="checkbox" name="main_news" id="main_news" value="2" ><label for="main_news" style="padding-left: 5px">Add Main News</label>
@@ -95,7 +110,7 @@
                         <br>
 
                         <div class="button">
-                            <input type="submit" name="submit" class="button" value="Post">
+                            <input type="submit" name="submit" class="button" value="Post" onclick="youtube_parser()">
                         </div>
                         <br>
                     </div>
@@ -118,6 +133,7 @@
         }
     </script>
     <script src='{% static "js/enable_or_desable.js" %}'></script>
+    <script src='{% static "js/ytlinkidgenerate.js" %}'></script>
     
 </body>
 </html>

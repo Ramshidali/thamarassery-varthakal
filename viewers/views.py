@@ -7,6 +7,7 @@ from datetime import date,datetime
 def index(request):
 
     icon = "icon.png"
+    temp_img = "tsytemp.jpg"
     news = news_field.objects.order_by('-id')[:40]
     gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:10]
     main_a = news_field.objects.filter(main_news=2).latest('id')
@@ -22,14 +23,20 @@ def index(request):
 
     ad_view_top_full = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
     ad_view_top_small = advetiment_field.objects.filter(ad_position_id=2).order_by('-id')[:1]
-    ad_view_aftrmain_small = advetiment_field.objects.filter(ad_position_id=2).exclude(id=ad_view_top_small).order_by('-id')[:1]
-    ad_view_aftr_lclnws = advetiment_field.objects.filter(ad_position_id=2).exclude(id=ad_view_top_small).exclude(id=ad_view_aftrmain_small).order_by('-id')[:1]
+    ad_view_aftrmain = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[:2]
+    ad_view_aftr_glfnws = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[3:5]
+    ad_view_aftr_ltstns = advetiment_field.objects.filter(ad_position=(1,2)).exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[6:7]
+    ad_view_in_tsyns = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[7:8]
+    ad_view_in_kdvlyns = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[9:10]
+    ad_view_in_trvmpdy = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[10:11]
+    ad_view_aftr_lclnws = advetiment_field.objects.filter(ad_position=(1,2)).exclude(id=ad_view_in_tsyns).exclude(id=ad_view_in_kdvlyns).exclude(id=ad_view_in_trvmpdy).exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[1:2]
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')
-    adv_view_banner = advetiment_field.objects.filter(ad_position_id=4).order_by('-id')[:1]
+
     wish_details = special_days.objects.order_by('-id')[:1]
 
 
     all_news = {
+        "t_img" : temp_img,
         "icon_img" : icon,
         'latest_news' : news,
         'gulf_news': gulf,
@@ -45,10 +52,15 @@ def index(request):
 
         'adv_top_full' : ad_view_top_full,
         'adv_top_small': ad_view_top_small,
-        'adv_aftrmain_small' :ad_view_aftrmain_small,
+        'adv_aftrmain' : ad_view_aftrmain,
+        'adv_aftrglf' : ad_view_aftr_glfnws,
+        'adv_aftrltst' : ad_view_aftr_ltstns,
+        'adv_intsyns' : ad_view_in_tsyns,
+        'adv_inkdvly' : ad_view_in_kdvlyns,
+        'adv_intrvmpdy' : ad_view_in_trvmpdy,
         'adv_aftr_lclnws' :ad_view_aftr_lclnws,
         'adv_side' : adv_view_side,
-        'adv_banner': adv_view_banner,
+
         'wish' : wish_details,
     }
 
@@ -69,9 +81,11 @@ def latest(request):
 
     image = news_nation.objects.filter(pk='4')
 
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
-    adv_view_banner = advetiment_field.objects.filter(ad_position_id=4).order_by('-id')
 
     t_news ={
         'news': n_latest,
@@ -82,9 +96,11 @@ def latest(request):
         'sports_n' : n_sports,
         'more_n' : n_more,
 
+        'adv_carousel_active' : adv_view_carousel_active,
         'adv_carousel' : adv_view_carousel,
+        'adv_small_active' : adv_view_small_active,
+        'adv_small' : adv_view_small,
         'adv_side' : adv_view_side,
-        'adv_banner': adv_view_banner,
         'logo_img': image,
     }
     return render(request,'news_types.html',t_news)
@@ -102,9 +118,11 @@ def gulf(request):
 
     image = news_nation.objects.filter(pk='2')
 
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
-    adv_view_banner = advetiment_field.objects.filter(ad_position_id=4).order_by('-id')
 
     t_news ={
         'news': gulf,
@@ -115,9 +133,12 @@ def gulf(request):
         'sports_n': n_sports,
         'more_n': n_more,
 
+
+        'adv_carousel_active' : adv_view_carousel_active,
         'adv_carousel' : adv_view_carousel,
+        'adv_small_active' : adv_view_small_active,
+        'adv_small' : adv_view_small,
         'adv_side' : adv_view_side,
-        'adv_banner': adv_view_banner,
         'logo_img': image,
     }
     return render(request,'news_types.html',t_news)
@@ -133,9 +154,11 @@ def internation(request):
     n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
     n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
-    adv_view_banner = advetiment_field.objects.filter(ad_position_id=4).order_by('-id')
 
     image = news_nation.objects.filter(pk='3')
 
@@ -148,9 +171,12 @@ def internation(request):
         'sports_n': n_sports,
         'more_n': n_more,
 
+
+        'adv_carousel_active' : adv_view_carousel_active,
         'adv_carousel' : adv_view_carousel,
+        'adv_small_active' : adv_view_small_active,
+        'adv_small' : adv_view_small,
         'adv_side' : adv_view_side,
-        'adv_banner': adv_view_banner,
         'logo_img': image,
     }
     return render(request,'news_types.html',inter_news)
@@ -166,9 +192,11 @@ def kerala(request):
     n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
     n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
-    adv_view_banner = advetiment_field.objects.filter(ad_position_id=4).order_by('-id')
 
     image = news_nation.objects.filter(pk='1')
 
@@ -181,9 +209,12 @@ def kerala(request):
         'sports_n': n_sports,
         'more_n': n_more,
 
+
+        'adv_carousel_active' : adv_view_carousel_active,
         'adv_carousel' : adv_view_carousel,
+        'adv_small_active' : adv_view_small_active,
+        'adv_small' : adv_view_small,
         'adv_side' : adv_view_side,
-        'adv_banner': adv_view_banner,
         'logo_img': image,
     }
     return render(request,'news_types.html',k_news)
@@ -197,9 +228,11 @@ def sports(request):
     n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
     n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
-    adv_view_banner = advetiment_field.objects.filter(ad_position_id=4).order_by('-id')
 
     image = news_nation.objects.filter(pk='5')
 
@@ -212,9 +245,12 @@ def sports(request):
         'sports_n': n_sports,
         'more_n': n_more,
 
-        'adv_carousel': adv_view_carousel,
+
+        'adv_carousel_active' : adv_view_carousel_active,
+        'adv_carousel' : adv_view_carousel,
+        'adv_small_active' : adv_view_small_active,
+        'adv_small' : adv_view_small,
         'adv_side': adv_view_side,
-        'adv_banner': adv_view_banner,
         'logo_img': image,
     }
 
@@ -230,9 +266,11 @@ def more(request):
     n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
     n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
-    adv_view_banner = advetiment_field.objects.filter(ad_position_id=4).order_by('-id')
 
     image = news_nation.objects.filter(pk='6')
 
@@ -245,9 +283,12 @@ def more(request):
         'sports_n': n_sports,
         'more_n': n_more,
 
-        'adv_carousel': adv_view_carousel,
+
+        'adv_carousel_active' : adv_view_carousel_active,
+        'adv_carousel' : adv_view_carousel,
+        'adv_small_active' : adv_view_small_active,
+        'adv_small' : adv_view_small,
         'adv_side': adv_view_side,
-        'adv_banner': adv_view_banner,
         'logo_img': image,
     }
 
@@ -279,9 +320,11 @@ def local(request):
     n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
     n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
-    adv_view_banner = advetiment_field.objects.filter(ad_position_id=4).order_by('-id')
 
 
 
@@ -309,9 +352,12 @@ def local(request):
         'sports_n': n_sports,
         'more_n': n_more,
 
-        'adv_carousel': adv_view_carousel,
+
+        'adv_carousel_active' : adv_view_carousel_active,
+        'adv_carousel' : adv_view_carousel,
+        'adv_small_active' : adv_view_small_active,
+        'adv_small' : adv_view_small,
         'adv_side': adv_view_side,
-        'adv_banner': adv_view_banner,
     }
     return render(request,'local_news.html',l_news)
 
@@ -328,9 +374,12 @@ def news_view(request,id):
     n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
     n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
-    adv_view_banner = advetiment_field.objects.filter(ad_position_id=4).order_by('-id')
+
 
     data = {
         'n_view':news,
@@ -342,9 +391,12 @@ def news_view(request,id):
         'sports_n': n_sports,
         'more_n': n_more,
 
-        'adv_carousel': adv_view_carousel,
+
+        'adv_carousel_active' : adv_view_carousel_active,
+        'adv_carousel' : adv_view_carousel,
+        'adv_small_active' : adv_view_small_active,
+        'adv_small' : adv_view_small,
         'adv_side': adv_view_side,
-        'adv_banner': adv_view_banner,
 
     }
     return render(request,'news_view.html',data)
@@ -354,10 +406,18 @@ def news_view(request,id):
 def about (request):
     contents = aboutus_content.objects.order_by('-id')
     user_details = aboutus.objects.all()
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
 
     context = {
         'content': contents,
         'about_details': user_details,
+        'adv_carousel_active': adv_view_carousel_active,
+        'adv_carousel': adv_view_carousel,
+        'adv_small_active': adv_view_small_active,
+        'adv_small': adv_view_small,
     }
     return render(request,'about.html',context)
 

@@ -7,7 +7,6 @@ class registration(models.Model):
     id = models.OneToOneField(User,on_delete=models.CASCADE,primary_key=True)
     phone = models.BigIntegerField()
     user_type = models.CharField(max_length=10,null=False,blank=False)
-    image = models.ImageField(null=False,blank=False)
 
     def __str__(self):
         return self.id.first_name
@@ -54,7 +53,8 @@ class news_field(models.Model):
     published_date = models.DateTimeField(null=True,blank=True)
     news_title = models.CharField(max_length=10000,null=False,blank=False)
     news_content = models.CharField(max_length=10000,null=False,blank=False)
-    news_image = models.ImageField(null=False)
+    news_image = models.ImageField(null=True,blank=True)
+    video_link = models.CharField(max_length=50, null=True, blank=True)
     main_news = models.IntegerField(null=False)
     breaking_news = models.IntegerField(null=False)
     news_district = models.ForeignKey(news_district, on_delete=models.CASCADE)
@@ -64,13 +64,6 @@ class news_field(models.Model):
 
     def __str__(self):
         return self.news_title
-
-class w_link(models.Model):
-    whatsapp = models.CharField(max_length=500,null=False,blank=False)
-    editor_id = models.ForeignKey(User,on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.whatsapp
 
 class special_days(models.Model):
     date_of_publish = models.DateTimeField(null=False,blank=False)

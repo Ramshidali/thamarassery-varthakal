@@ -44,9 +44,13 @@
                         <h4>Advertisement</h4><br>
                         <input type="text" name="headding" class="headding" placeholder="Enter Headding" style="width: 200px" required><br><br>
                         <div>
+                        <select name="ad_position" required>
+                        <option value="" >Select Place</option>
                             {% for n in ad_position %}
-                                <input name="ad_position" id="{{ n.adv_position }}" type="radio" value="{{ n.id }}"  required/>{{ n.adv_position }}
+                                <option value="{{ n.id }}">{{ n.adv_position }}</option>
+{#                                <input name="ad_position" id="{{ n.adv_position }}" type="radio" value="{{ n.id }}"  required/>{{ n.adv_position }}#}
                             {% endfor %}
+                        </select>
                         </div><br>
                         <span>Select Image</span><br><br>
                         <div class="image_field">
