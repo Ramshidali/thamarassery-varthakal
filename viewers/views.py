@@ -25,7 +25,7 @@ def index(request):
     ad_view_top_small = advetiment_field.objects.filter(ad_position_id=2).order_by('-id')[:1]
     ad_view_aftrmain = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[:2]
     ad_view_aftr_glfnws = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[3:5]
-    ad_view_aftr_ltstns = advetiment_field.objects.filter(ad_position=(1,2)).exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[6:7]
+    ad_view_aftr_ltstns = advetiment_field.objects.filter(ad_position=(1,2)).exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[1:2]
     ad_view_in_tsyns = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[7:8]
     ad_view_in_kdvlyns = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[9:10]
     ad_view_in_trvmpdy = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[10:11]
