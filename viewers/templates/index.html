@@ -133,7 +133,7 @@
 
                      <marquee class="scroll-text breaking-news-news">
                          {% for b_news in breaking %}
-                             <span class="fa fa-globe" style="color: red"> &nbsp;  </span><a href="#">&nbsp;{{ b_news.news_title|linebreaks }}&nbsp;</a>
+                             <span class="fa fa-globe" style="color: red"> &nbsp;  </span><a href="/news_view/{{ b_news.pk }}/">&nbsp;{{ b_news.news_title }}&nbsp;</a>
                          {% endfor %}
                      </marquee>
 
@@ -143,6 +143,7 @@
         </span>
     </label>
 </div>
+
 
 
 
@@ -179,7 +180,7 @@
                                 <div class="col-md-12 mainnews_img_div_sm6">
                                     {% if more_main.news_image == "NULL" %}
 {#                                    <iframe src='{{ more_main.video_link }}?controls=0' frameborder="0" allowfullscreen class="main_news_image_b"></iframe>#}
-                                    <img src='http://i4.ytimg.com/vi/{{ more_main.video_link }}/maxresdefault.jpg' alt="" class="main_news_image">
+                                    <img src='http://i4.ytimg.com/vi/{{ more_main.video_link }}/maxresdefault.jpg' alt="" class="main_news_image_b">
                                 {% else %}
                                     <img src='{{ more_main.news_image.url }}' alt="" class="main_news_image_b">
                                 {% endif %}
