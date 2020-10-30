@@ -48,6 +48,10 @@
     line-height: 18px;
 }
 
+.adv_area_2{
+    display: none;
+}
+
 
 /* MOBILE VIEW*/
 
@@ -63,6 +67,11 @@
     }
     .follow_us{
         display: none;
+    }
+    .adv_area_2 {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
     }
     .namerow{
         display: none;

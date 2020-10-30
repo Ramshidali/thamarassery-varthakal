@@ -23,13 +23,13 @@ def index(request):
 
     ad_view_top_full = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
     ad_view_top_small = advetiment_field.objects.filter(ad_position_id=2).order_by('-id')[:1]
-    ad_view_aftrmain = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[:2]
-    ad_view_aftr_glfnws = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[3:5]
-    ad_view_aftr_ltstns = advetiment_field.objects.filter(ad_position=(1,2)).exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[1:2]
-    ad_view_in_tsyns = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[7:8]
-    ad_view_in_kdvlyns = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[9:10]
-    ad_view_in_trvmpdy = advetiment_field.objects.exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[10:11]
-    ad_view_aftr_lclnws = advetiment_field.objects.filter(ad_position=(1,2)).exclude(id=ad_view_in_tsyns).exclude(id=ad_view_in_kdvlyns).exclude(id=ad_view_in_trvmpdy).exclude(id=ad_view_top_small).exclude(id=ad_view_top_full).order_by('-id')[1:2]
+    ad_view_aftrmain = advetiment_field.objects.order_by('-id')[:2]
+    ad_view_aftr_glfnws = advetiment_field.objects.order_by('-id')[3:5]
+    ad_view_aftr_ltstns = advetiment_field.objects.filter(ad_position=(1,2)).order_by('-id')[1:2]
+    ad_view_in_tsyns = advetiment_field.objects.order_by('-id')[6:7]
+    ad_view_in_kdvlyns = advetiment_field.objects.order_by('-id')[8:10]
+    ad_view_in_trvmpdy = advetiment_field.objects.order_by('-id')[10:11]
+    ad_view_aftr_lclnws = advetiment_field.objects.filter(ad_position=(1,2)).order_by('-id')[1:2]
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')
 
     wish_details = special_days.objects.order_by('-id')[:1]
@@ -81,10 +81,10 @@ def latest(request):
 
     image = news_nation.objects.filter(pk='4')
 
-    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
-    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
 
     t_news ={
@@ -118,10 +118,10 @@ def gulf(request):
 
     image = news_nation.objects.filter(pk='2')
 
-    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
-    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
 
     t_news ={
@@ -154,10 +154,10 @@ def internation(request):
     n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
     n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
-    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
-    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
 
     image = news_nation.objects.filter(pk='3')
@@ -192,10 +192,10 @@ def kerala(request):
     n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
     n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
-    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
-    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
 
     image = news_nation.objects.filter(pk='1')
@@ -228,10 +228,10 @@ def sports(request):
     n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
     n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
-    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
-    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
 
     image = news_nation.objects.filter(pk='5')
@@ -266,10 +266,10 @@ def more(request):
     n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
     n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
-    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
-    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
 
     image = news_nation.objects.filter(pk='6')
@@ -320,11 +320,19 @@ def local(request):
     n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
     n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
-    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
-    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
+
+    ad_view_aftr_tsy_n = advetiment_field.objects.order_by('-id')[:1]
+    ad_view_aftr_kdvly = advetiment_field.objects.order_by('-id')[2:3]
+    ad_view_aftr_blssry = advetiment_field.objects.order_by('-id')[4:5]
+    ad_view_aftr_mukkam = advetiment_field.objects.order_by('-id')[6:7]
+    ad_view_aftr_trvmpdy = advetiment_field.objects.order_by('-id')[8:9]
+    ad_view_aftr_pdppdy = advetiment_field.objects.order_by('-id')[10:11]
+    ad_view_aftr_ktpra = advetiment_field.objects.order_by('-id')[12:13]
 
 
 
@@ -358,6 +366,17 @@ def local(request):
         'adv_small_active' : adv_view_small_active,
         'adv_small' : adv_view_small,
         'adv_side': adv_view_side,
+
+        'adv_aftrtsy': ad_view_aftr_tsy_n,
+        'adv_aftrkdly': ad_view_aftr_kdvly,
+        'adv_aftrblsy': ad_view_aftr_blssry,
+        'adv_aftrmukkam': ad_view_aftr_mukkam,
+        'adv_aftrtrvmpdy': ad_view_aftr_trvmpdy,
+        'adv_aftrpdppy': ad_view_aftr_pdppdy,
+        'adv_aftrktpra': ad_view_aftr_ktpra,
+
+
+
     }
     return render(request,'local_news.html',l_news)
 
@@ -374,10 +393,10 @@ def news_view(request,id):
     n_sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:1]
     n_more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:1]
 
-    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_carousel_active).order_by('-id')
-    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
-    adv_view_small = advetiment_field.objects.filter(ad_position_id=1).exclude(id=adv_view_small_active).order_by('-id')
+    adv_view_carousel_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_carousel = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_carousel_active).order_by('-id')
+    adv_view_small_active = advetiment_field.objects.filter(ad_position_id=(1,2)).order_by('-id')[:1]
+    adv_view_small = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
 
 
