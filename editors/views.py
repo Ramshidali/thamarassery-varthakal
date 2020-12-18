@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.core.files.storage import FileSystemStorage
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from . models import registration,news_field,advetiment_field,adv_position,news_place,\
     news_nation,news_district,aboutus_content,aboutus,special_days
 from django.contrib.auth.models import User
@@ -255,10 +256,22 @@ def my_record(request):
         day = datetime.date.today().weekday()
         days = ['തിങ്കള്‍', 'ചൊവ്വ', 'ബുധന്‍', 'വ്യാഴം', 'വെള്ളി', 'ശനി', 'ഞായര്‍']
         user = User.objects.get(pk=request.session['id'])
-        data = news_field.objects.filter(editor_id=user.pk).order_by('-id')[:10]
+        data = news_field.objects.filter(editor_id=user.pk).order_by('-id')
         nation = news_nation.objects.all()
+
+        page = request.GET.get('page', 1)
+        paginator = Paginator(data, 20)
+        try:
+            m_r_paginator = paginator.page(page)
+        except PageNotAnInteger:
+            m_r_paginator = paginator.page(1)
+        except EmptyPage:
+            m_r_paginator = paginator.page(paginator.num_pages)
+
+
         record = {
-            'records': data,
+            # 'records': data,
+            'records': m_r_paginator,
             'nation': nation,
             'date': date,
             'day': days[day],
