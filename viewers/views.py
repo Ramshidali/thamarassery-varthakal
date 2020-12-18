@@ -18,7 +18,7 @@ def index(request):
     local_kdly_tbl = news_field.objects.filter(news_place_id=2).exclude(pk=local_kdly.pk).order_by('-id')[:5]
     local_trvpdi = news_field.objects.filter(news_place_id=5).latest('id')
     local_trvpdi_tbl = news_field.objects.filter(news_place_id=5).exclude(pk=local_trvpdi.pk).order_by('-id')[:5]
-    breaking_news = news_field.objects.filter(breaking_news=2).order_by('-id')
+    breaking_news = news_field.objects.filter(breaking_news=2).order_by('-id')[:2]
 
 
     ad_view_top_full = advetiment_field.objects.filter(ad_position_id=1).order_by('-id')[:1]
