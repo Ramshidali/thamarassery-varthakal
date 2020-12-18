@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from  editors.models import registration,news_field,advetiment_field,news_place,news_nation,aboutus,aboutus_content,special_days
 from django.contrib.auth.models import User
 from datetime import date,datetime
@@ -70,7 +71,7 @@ def index(request):
 
 
 def latest(request):
-    n_latest = news_field.objects.order_by('-id')[:100]
+    n_latest = news_field.objects.order_by('-id')[:150]
     inter = news_field.objects.filter(news_nation_id=3).order_by('-id')[:1]
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
@@ -87,14 +88,25 @@ def latest(request):
     adv_view_small = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
 
+    page = request.GET.get('page', 1)
+    paginator = Paginator(n_latest, 20)
+    try:
+        n_l_paginator = paginator.page(page)
+    except PageNotAnInteger:
+        n_l_paginator = paginator.page(1)
+    except EmptyPage:
+        n_l_paginator = paginator.page(paginator.num_pages)
+
     t_news ={
-        'news': n_latest,
+        # 'news': n_latest,
         'internation' : inter,
         'kerala_n' : n_kerala,
         'gulf_n' : n_gulf,
         'local_n' : n_local,
         'sports_n' : n_sports,
         'more_n' : n_more,
+
+        'n_l_p' : n_l_paginator,
 
         'adv_carousel_active' : adv_view_carousel_active,
         'adv_carousel' : adv_view_carousel,
@@ -108,7 +120,7 @@ def latest(request):
 
 
 def gulf(request):
-    gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:100]
+    gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:150]
     inter = news_field.objects.filter(news_nation_id=3).order_by('-id')[:1]
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
@@ -124,8 +136,17 @@ def gulf(request):
     adv_view_small = advetiment_field.objects.filter(ad_position_id=(1,2)).exclude(id=adv_view_small_active).order_by('-id')
     adv_view_side = advetiment_field.objects.filter(ad_position_id=3).order_by('-id')[:5]
 
+    page = request.GET.get('page', 1)
+    paginator = Paginator(gulf, 20)
+    try:
+        n_l_paginator = paginator.page(page)
+    except PageNotAnInteger:
+        n_l_paginator = paginator.page(1)
+    except EmptyPage:
+        n_l_paginator = paginator.page(paginator.num_pages)
+
     t_news ={
-        'news': gulf,
+        # 'news': gulf,
         'internation': inter,
         'kerala_n': n_kerala,
         'gulf_n': n_gulf,
@@ -133,6 +154,7 @@ def gulf(request):
         'sports_n': n_sports,
         'more_n': n_more,
 
+        'n_l_p': n_l_paginator,
 
         'adv_carousel_active' : adv_view_carousel_active,
         'adv_carousel' : adv_view_carousel,
@@ -146,7 +168,7 @@ def gulf(request):
 
 
 def internation(request):
-    inter = news_field.objects.filter(news_nation_id=3).order_by('-id')
+    inter = news_field.objects.filter(news_nation_id=3).order_by('-id')[:150]
     m_inter = news_field.objects.filter(news_nation_id=3).order_by('-id')[:1]
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
@@ -162,14 +184,25 @@ def internation(request):
 
     image = news_nation.objects.filter(pk='3')
 
+    page = request.GET.get('page', 1)
+    paginator = Paginator(inter, 20)
+    try:
+        n_l_paginator = paginator.page(page)
+    except PageNotAnInteger:
+        n_l_paginator = paginator.page(1)
+    except EmptyPage:
+        n_l_paginator = paginator.page(paginator.num_pages)
+
     inter_news ={
-        'news': inter,
+        # 'news': inter,
         'internation': m_inter,
         'kerala_n': n_kerala,
         'gulf_n': n_gulf,
         'local_n': n_local,
         'sports_n': n_sports,
         'more_n': n_more,
+
+        'n_l_p': n_l_paginator,
 
 
         'adv_carousel_active' : adv_view_carousel_active,
@@ -184,7 +217,7 @@ def internation(request):
 
 
 def kerala(request):
-    kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:100]
+    kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:150]
     inter = news_field.objects.filter(news_nation_id=3).order_by('-id')[:1]
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
@@ -200,6 +233,15 @@ def kerala(request):
 
     image = news_nation.objects.filter(pk='1')
 
+    page = request.GET.get('page', 1)
+    paginator = Paginator(kerala, 20)
+    try:
+        n_l_paginator = paginator.page(page)
+    except PageNotAnInteger:
+        n_l_paginator = paginator.page(1)
+    except EmptyPage:
+        n_l_paginator = paginator.page(paginator.num_pages)
+
     k_news ={
         'news': kerala,
         'internation': inter,
@@ -208,6 +250,8 @@ def kerala(request):
         'local_n': n_local,
         'sports_n': n_sports,
         'more_n': n_more,
+
+        'n_l_p': n_l_paginator,
 
 
         'adv_carousel_active' : adv_view_carousel_active,
@@ -220,7 +264,7 @@ def kerala(request):
     return render(request,'news_types.html',k_news)
 
 def sports(request):
-    sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:100]
+    sports = news_field.objects.filter(news_nation_id=5).order_by('-id')[:150]
     inter = news_field.objects.filter(news_nation_id=3).order_by('-id')[:1]
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
@@ -236,6 +280,15 @@ def sports(request):
 
     image = news_nation.objects.filter(pk='5')
 
+    page = request.GET.get('page', 1)
+    paginator = Paginator(sports, 20)
+    try:
+        n_l_paginator = paginator.page(page)
+    except PageNotAnInteger:
+        n_l_paginator = paginator.page(1)
+    except EmptyPage:
+        n_l_paginator = paginator.page(paginator.num_pages)
+
     s_news = {
         'news': sports,
         'internation': inter,
@@ -245,6 +298,7 @@ def sports(request):
         'sports_n': n_sports,
         'more_n': n_more,
 
+        'n_l_p': n_l_paginator,
 
         'adv_carousel_active' : adv_view_carousel_active,
         'adv_carousel' : adv_view_carousel,
@@ -258,7 +312,7 @@ def sports(request):
 
 
 def more(request):
-    more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:100]
+    more = news_field.objects.filter(news_nation_id=6).order_by('-id')[:150]
     inter = news_field.objects.filter(news_nation_id=3).order_by('-id')[:1]
     n_kerala = news_field.objects.filter(news_nation_id=1).order_by('-id')[:1]
     n_gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:1]
@@ -274,6 +328,15 @@ def more(request):
 
     image = news_nation.objects.filter(pk='6')
 
+    page = request.GET.get('page', 1)
+    paginator = Paginator(more, 20)
+    try:
+        n_l_paginator = paginator.page(page)
+    except PageNotAnInteger:
+        n_l_paginator = paginator.page(1)
+    except EmptyPage:
+        n_l_paginator = paginator.page(paginator.num_pages)
+
     s_news = {
         'news': more,
         'internation': inter,
@@ -282,6 +345,8 @@ def more(request):
         'local_n': n_local,
         'sports_n': n_sports,
         'more_n': n_more,
+
+        'n_l_p': n_l_paginator,
 
 
         'adv_carousel_active' : adv_view_carousel_active,
