@@ -9,7 +9,7 @@ def index(request):
 
     icon = "icon.png"
     temp_img = "tsytemp.jpg"
-    news = news_field.objects.order_by('-id')[:40]
+    news = news_field.objects.order_by('-id')[:14]
     gulf = news_field.objects.filter(news_nation_id=2).order_by('-id')[:10]
     main_a = news_field.objects.filter(main_news=2).latest('id')
     main_b = news_field.objects.filter(main_news=2).exclude(pk=main_a.pk).order_by('-id')[:2]
